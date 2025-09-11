@@ -2464,7 +2464,8 @@ textarea.w-select {
 .hero-title {
     text-align: center;
     white-space: normal;
-    max-width: 673px;
+    /* max-width: 673px; */
+    width: 100%;
     line-height: 40px;
     position: relative
 }
@@ -2477,8 +2478,6 @@ textarea.w-select {
     object-fit: scale-down;
     -webkit-background-clip: text;
     background-clip: text;
-    width: 3.33em;
-    height: 1.2em;
     padding-top: 12px;
     font-size: .95em;
     display: inline-block
