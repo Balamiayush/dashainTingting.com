@@ -83,7 +83,7 @@
     }
 }
     body {
-      background: #D9F0EF;
+      /* background: #D9F0EF; */
      
     }
     @media screen and (max-width: 500px) {
@@ -120,13 +120,51 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
   </style>
+  <style>
+ 
+  section{
+    display: grid;
+    
+   
+  }
+  .sticky-heading{
+    position:sticky !important;
+    top:10px;
+    height:50vh;
+    align-content:center;
+  }
+  .box2{
+    
+    width:300px;
+    height:400px;
+    outline:1px solid green;
+  }
+  li{
+     width: 100%;
+  }
+  li:nth-child(odd){
+   
+    display:flex;
+    justify-content:start;
+  }
+  li:nth-child(even){
+    display:flex;
+    justify-content:end;
+  }
+  .boxcontainerr:nth-child(odd){
+    margin-right: 10vw;
+  }
+  .boxcontainerr:nth-child(even){
+    margin-right: 10vw;
+  }
+</style>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
  
 </head>
 
 <body   >
-  <div  class="main-wrap w-full h-full relative"   >
-    <div class="hero w-full h-full relative ">
+  <div  class="main-wrap w-full h-full relative "   >
+    <div class="hero w-full h-full relative  overflow-hidden">
       <nav class="flex w-full h-[60px]  justify-around  items-center  z-[1000] pt-10  ">
         <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[15vw] w-[20vw]  object-cover" alt="">
         <div class=" bg-[#2C2C30] lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
@@ -140,6 +178,7 @@ id="kite1"
         class="lg:block hidden kite lg:left-[18%] left-1/10 absolute top-50  z-[-1] lg:bottom-[20%] lg:z-[100]" alt=""
         data-scroll >
         <img src="./assets/kite.png"
+        id="kite2"
         data-scroll 
         class="lg:block hidden kite bottom-0 right-[18%] top-65 z-[-1] absolute lg:bottom-[10%] rotate-45 lg:z-[100]"
         alt="" >
@@ -160,7 +199,7 @@ id="kite1"
       style="-webkit-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
       class="hero-graphics">
       
-      <div class="hero-form-container overflow-block">
+      <div class="hero-form-container ">
         <div data-w-id="413b9f38-379b-650c-5a5f-6f44d9abc040"
           style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform-style:preserve-3d"
           class="form-background-gradient"></div>
@@ -213,46 +252,46 @@ id="kite1"
   </div>
   <img src="./assets/footer-clouds 2.png" class="absolute bottom-0 w-full h-auto object-cover z-[-1]" alt="">
 </div>
-    <div class="relative w-full h-screen lg:h-full z-[-1]  page2imgg  ">
-      <img src="./assets/page2img.png"  data-scroll data-scroll-speed="1" class="  relative top-[-15vw] w-full object-cover z-[-1] h-full " alt="">
-      <div class="absolute p-8 lg:p-0 top-30 lg:top-35 lg:left-1/6 flex lg:gap-[96px] gap-[42px] flex-col w-full">
+<div class="relative w-full h-auto z-[-1]  page2imgg  relative z-[10000] overflow-hidden ">
+  <img src="./assets/page2img.png"  data-scroll data-scroll-speed="1" class="  relative top-[-15vw] w-full object-cover z-[-1] h-full " alt="">
+  <div class="absolute p-8 lg:p-0 top-30 lg:top-35 lg:left-1/6 flex lg:gap-[96px] gap-[42px] flex-col w-full">
 
-        <p
-        
-          class=" top-0 page2text hidden lg:block lg:text-[40px] text-white lg:leading-[40px] font-semibold text-[25px]  leading-[35px]">
-          In our culture,<span id="split-target"  class="page2textSpan  text-span-3" style="color:#CECECE">
-            the human voice <br>
-            carries emotions, respect and <br> personal connection that text <br> message simply cannot match.
-          </span>
-        </p>
-      <p
+    <p
+    
+      class=" top-0 page2text hidden lg:block lg:text-[40px] text-white lg:leading-[40px] font-semibold text-[25px]  leading-[35px]">
+      In our culture,<span id="split-target"  class="page2textSpan  text-span-3" style="color:#CECECE">
+        the human voice <br>
+        carries emotions, respect and <br> personal connection that text <br> message simply cannot match.
+      </span>
+    </p>
+  <p
 
-        class="  block lg:hidden lg:text-[40px] text-white lg:leading-[40px] font-semibold text-[30px]  leading-[30px]">
-        In our culture, the human voice
-        carries emotions, respect and personal connection that text message simply cannot match.</p>
-      <div class="flex  lg:justify-between gap-[15px] w-[60%] text-white ">
-        <div class="flex flex-col gap-[1vw]">
-          <h2 class=" odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
-          <p class="text-[16px] leading-none">Open Rate</p>
-        </div>
-        <div class="flex flex-col gap-[1vw]">
-          <h2 class="odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
-          <p class="text-[16px] leading-none">Open Rate</p>
-        </div>
-        <div class="flex flex-col gap-[1vw]">
-          <h2 class=" odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
-          <p class="text-[16px] leading-none">Open Rate</p>
-        </div>
-        <div class="flex flex-col gap-[1vw]">
-          <h2 class="  odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
-          <p class="text-[16px] leading-none">Open Rate</p>
-        </div>
-       
-      </div>
+    class="  block lg:hidden lg:text-[40px] text-white lg:leading-[40px] font-semibold text-[30px]  leading-[30px]">
+    In our culture, the human voice
+    carries emotions, respect and personal connection that text message simply cannot match.</p>
+  <div class="flex  lg:justify-between gap-[15px] w-[60%] text-white ">
+    <div class="flex flex-col gap-[1vw]">
+      <h2 class=" odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
+      <p class="text-[16px] leading-none">Open Rate</p>
     </div>
+    <div class="flex flex-col gap-[1vw]">
+      <h2 class=" text-[30px] lg:text-[56px] font-bold">1M+</h2>
+      <p class="text-[16px] leading-none">Calls initiated</p>
+    </div>
+    <div class="flex flex-col gap-[1vw]">
+      <h2 class=" odometer50 text-[30px] lg:text-[56px] font-bold">50+</h2>
+      <p class="text-[16px] leading-none">Enterprises</p>
+    </div>
+    <div class="flex flex-col gap-[1vw]">
+      <h2 class="  odometer24 text-[30px] lg:text-[56px] font-bold">24/7</h2>
+      <p class="text-[16px] leading-none">Support</p>
+    </div>
+   
   </div>
-  <div
-    class="page2 w-full   lg:h-auto h-screen   pt-[8vw] relative  rounded-t-[40px] top-[-20vw]  flex items-center flex-col  ">
+</div>
+</div>
+<div
+    class="page2 w-full   lg:h-auto h-screen    pt-[8vw] relative  rounded-t-[40px] top-[-20vw]  flex items-center flex-col  ">
     <img src="./assets/page3.png" class="w-full h-auto absolute z-[-1] top-0 object-cover pointer-events-none" alt="">
     <div class="relative w-[80%] lg:w-[75%] h-full flex-col lg:flex-col  lg:top-1/6 flex items-center justify-center gap-[48px]">
       <div class="w-full  flex flex-col lg:flex-row items-left lg:items-center justify-between gap-[24px] lg:gap-[0px]">
@@ -301,139 +340,137 @@ id="kite1"
       </div>
     </div>
   </div>
-
-  <div class="page3 w-full flex flex-col items-center  min-h-screen   relative z-[-1]    bg-[#D9F0EF] top-[-20vw] z-[10] ">
-    <img src="./assets/page3cloude.png" class="w-full h-auto absolute pointer-events-none z-[-1] top-0 object-cover" alt="">
-    <div class="relative w-[80%]  flex-col top-1/6 flex items-center gap-[48px]">
-      <div class="w-full flex flex-col items-center gap-[24px] text-center pt-[15vw] lg:pt-[8vw]">
+  <section class="relative w-full lg:h-auto h-screen   top-[-10vw] flex items-center flex-col">
+     <!-- <img src="./assets/page3cloude.png" class="w-full h-auto absolute pointer-events-none z-[-1] top-0 object-cover" alt=""> -->
+    <div class="relative w-[100%]  flex-col  flex items-center gap-[48px] ">
+      <div class="w-full flex flex-col items-center gap-[24px] text-center ">
         <h1 class="text-[32px] font-semibold leading-[32px]">Perfect for Every Businesses</h1>
         <p class="text-[#4D4D4D] text-[18px] lg:block hidden">Voice carries emotions, context, and authenticity that text alone can't capture. <br> It's the magic that transforms messages into memorable experiences. </p>
         <p class="text-[#4D4D4D] text-[18px] lg:hidden block ">Voice carries emotions, context, and authenticity that text alone can't capture. It's the magic that transforms messages into memorable experiences. </p>
       </div>
     </div>
+    <!-- <img src="./assets/page3.png" class="w-full h-" alt=""> -->
+  <div class="sticky-heading  w-full">
+    <img src="./assets/logopage3.png" alt="" class="w-[20%] mx-auto relative left-[50%] translate-x-[-50%]">
+   </div>
+  <ul>
+    <div class="boxcontainerr">
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
+    </div>
+    
+    </li>
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Internet Service Providers <br> Providers</p>
+    </div>
+    
+    </li>
+    </div>
+    <div class="boxcontainerr">
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/groups.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">NGOs & Communities</p>
+    </div>
+    
+    </li>
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Corporate Teams</p>
+    </div>
+    
+    </li>
+    </div>
+    <div class="boxcontainerr">
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/delivery-bike.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Logistics and delivery</p>
+    </div>
+    
+    </li>
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/heart-beat.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Healthcare</p>
+    </div>
+    
+    </li>
+    </div>
+    <div class="boxcontainerr">
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/court.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Municipalities</p>
+    </div>
+    
+    </li>
+      <li>
+    <div
+      class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
+      <img src="./assets/school,building.png" class="w-[40px] h-[40px] object-cover" alt="">
+      <p class="text-center text-[20px] font-semibold">Educational Institutions</p>
+    </div>
+    
+    </li>
+    </div>
+  </ul>
+  
+</section>
 
-    <img src="./assets/logopage3.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 " alt="">
-   <div class="lg:block hidden">
- 
-    <div
-      class="boxxx w-[300px] absolute left-10 top-1/2 h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute right-10 top-1/2 h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute left-[20%] top-[80%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute left-[60%] top-[80%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute left-10 top-[110%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute right-10 top-[110%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute left-[38%] top-[130%] translate-x-[-50%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-    <div
-      class="boxxx w-[300px] absolute right-[15%] top-[130%] translate-x-[-50%] h-[148px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-      </div>
-      <div class="lg:hidden block  min-h-screen relative w-auto ">
-        <div class="boxxx w-[200px] absolute ml-[-45vw] top-[10%] h-[160px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[18px] lg:text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-        <div class="boxxx w-[200px] absolute ml-[-10vw] top-[40%] h-[160px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[18px] lg:text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-        <div class="boxxx w-[200px] absolute right-[-5vw] top-[70%] h-[160px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[18px] lg:text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div>
-        <div class="boxxx w-[200px] absolute left-[-5vw] top-[100%] h-[160px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[18px] lg:text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div class='w-[408px] footerbox' >
-        <div class="boxxx w-[200px] absolute left-[-5vw] top-[100%] h-[160px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-      <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
-      <p class="text-center text-[18px] lg:text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
-    </div class='w-[408px] footerbox' >
-       
-      </div>
-
-  </div>
- <div class="page4 w-full  lg:h-screen h-[150vh]  relative lg:rounded-t-[40px] mt-[10vw">
-  <img src="./assets/footer.png" class="w-full h-full pointer-events-none   absolute z-[1] top-[20%] " alt="">
-  <div class="relative w-full   flex-col top-[40%] flex z-[100] items-center gap-[24px] lg:gap-[20px] ">
-    <h1 class=" text-[40px] lg: text-[64px] text-center leading-[45px] text-white">1 Call = Just <span class="text-[#2C2C30] ">
-      70 Paisa
-    </span>
-  </h1>
-    <p class="text-center  " >Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
-    <div class="flex w-full  h-full gap-[24px] items-center justify-center mt-[50px] flex-col">
-    <div class="relative z-[100] w-[340px]  lg:w-[408px] h-[225px]  bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
-      <p class="text-[24px] font-semibold ">Ting Ting Dashain Pack</p>
-      <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Lowest call rate – only 70 paisa per call</p>
-      <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Easy to send personalized wishes </p>
-      <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Perfect for festivals, offers, and greetings</p>
-    </div>
-    <div class="relative z-[100] flex  items-center justify-center gap-[16px]  ">
- <div class=" bg-[#2C2C30] lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
-          <p>Claim your festive offer now</p>
-        </div>
-    </div>
- <div style="border: 1px solid #2C2C30;" class=" btnnn lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
-          <p>Schedule a call</p>
-        </div>
-    </div>
-  </div>
+<div class="page4 w-full  lg:h-screen h-[150vh]  relative lg:rounded-t-[40px] ">
+ <img src="./assets/footer.png" class="w-full h-full pointer-events-none   absolute z-[1]  " alt="">
+ <div class="relative w-full   flex-col top-[10%] flex z-[100] items-center gap-[24px] lg:gap-[20px] ">
+   <h1 class=" text-[40px] lg: text-[64px] text-center leading-[45px] text-white">1 Call = Just <span class="text-[#2C2C30] ">
+     70 Paisa
+   </span>
+ </h1>
+   <p class="text-center  " >Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
+   <div class="flex w-full  h-full gap-[24px] items-center justify-center mt-[50px] flex-col">
+   <div class="relative z-[100] w-[340px]  lg:w-[408px] h-[225px]  bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
+     <p class="text-[24px] font-semibold ">Ting Ting Dashain Pack</p>
+     <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Lowest call rate – only 70 paisa per call</p>
+     <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Easy to send personalized wishes </p>
+     <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png" class="w-[25px] h-[25px]" alt=""> Perfect for festivals, offers, and greetings</p>
+   </div>
+   <div class="relative z-[100] flex  items-center justify-center gap-[16px]   ">
+<div class=" bg-[#2C2C30] lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
+         <p>Claim your festive offer now</p>
+       </div>
+       <div style="border: 1px solid #2C2C30;" class=" btnnn lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
+                <p>Schedule a call</p>
+              </div>
+          </div>
    </div>
  </div>
-<section class="footer relative z-[100] bg-white  ">
+  </div>
+  <div class="w-full h-[60vh] flex flex-col gap-[60px] mt-[5vw] justify-center ">
+    <div class="flex w-full items-center justify-evenly flex  ">
+      <h1 class="text-[40px] leading-none font-semibold">Ready to Make This <br> <span class="">  Dashain </span> Special?</h1>
+      <p class="text-[18px]">Join hundreds of organizations already using TingTing.io <br> to create meaningful connections this festival season.</p>
+    </div>
+    <div class="footer relative z-[100] bg-white  ">
     <div class="w-layout-blockcontainer box footer-container w-container">
       <div class="div-block-16">
         <div class="div-block-15"><img
             src="assets/footerlogo.png"
-            loading="lazy" alt="black transparent logo of tingting" class="image-2" />
+            loading="lazy" alt="black transparent logo of tingting" class="image-2 " />
           <div class="text-block-9">AI communication. Built for Nepal.</div>
         </div>
         <div class="div-block-8">
-          <h1 class="text-block-9">Contact Us</h1><a href="tel:+9779801467711" class="footer-link w-inline-block">
-            <div>+977 9801467711</div>
-          </a><a href="mailto:connect@tingting.io" class="footer-link w-inline-block">
-            <div>hello@tingting.io</div>
-          </a>
-          <div class="div-block-7"><a href="https://www.linkedin.com/company/tingtingnp/" target="_blank"
-              class="w-inline-block"><img
-                src="assets/6787a1e2127ba5e0f6b82bff_linkedin.svg"
-                loading="lazy" alt="linkedin logo of tingting" class="image-4" /></a><a
-              href="https://www.instagram.com/tingting_prixa/" target="_blank" class="w-inline-block"><img
-                src="assets/67ce80ac7b172ea2b7fef33c_1384031.png"
-                loading="lazy" sizes="(max-width: 512px) 100vw, 512px"
-                srcset="assets/67ce80ac7b172ea2b7fef33c_1384031.png 500w"
-                alt="instagram with tingting" class="image-4" /></a><a href="https://www.facebook.com/tingting.io"
-              target="_blank" class="w-inline-block"><img
-                src="assets/67d6b3c574731d1b6d9f4853_facebook.png"
-                loading="lazy" alt="facebook logo for tingting" class="image-4" /></a></div>
+          <img src="./assets/temple.png" class="w-full object-cover" alt="">
         </div>
       </div>
       <div class="div-block-6"></div>
@@ -442,8 +479,8 @@ id="kite1"
           Services</a><a href="/privacy-policy" class="footer-link hide">Privacy Policy</a>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+  </div>
 </body>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67861d5e9350d5531cf78a3b"
     type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -454,39 +491,22 @@ id="kite1"
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
     <script src="./split-type@0.3.4/umd/index.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
- <script>
- 
-      // LENIS SMOOTH SCROLL
-      let lenis;
-      //   if (Webflow.env("editor")) {
-      lenis = new Lenis({
-        lerp: 0.1,
-        wheelMultiplier: 0.6,
-        gestureOrientation: "vertical",
-        normalizeWheel: false,
-        smoothTouch: false,
-      });
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-      //   }
-      $("[data-lenis-start]").on("click", function () {
-        lenis.start();
-      });
-      $("[data-lenis-stop]").on("click", function () {
-        lenis.stop();
-      });
-      $("[data-lenis-toggle]").on("click", function () {
-        $(this).toggleClass("stop-scroll");
-        if ($(this).hasClass("stop-scroll")) {
-          lenis.stop();
-        } else {
-          lenis.start();
-        }
-      });
-    </script>
+<script>
+
+  // 1. Create one global Lenis instance
+const lenis = new Lenis({
+  lerp: 0.1,
+  wheelMultiplier: 0.6,
+  smoothWheel: true,
+  smoothTouch: true,
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+</script>
       <script>
       // Register the ScrollTrigger plugin
 
@@ -558,7 +578,7 @@ id="kite1"
               start: "top 120px", // When the top of the element hits the top of the viewport
               end: "+=1000",
               pin: ".page2imgg",
-               markers:true
+              //  markers:true
             },
             
           });
@@ -587,7 +607,7 @@ id="kite1"
             start: "top top",
           },
           textContent: '0%',
-          duration: 4,
+          duration: 1,
           ease: Power1.easeIn,
           snap: { textContent: 1 },
           onUpdate: function () {
@@ -597,6 +617,72 @@ id="kite1"
           },
         });
       });
+        // //ScrollTrigger.normalizeScroll(true);
+        gsap.from(".odometer50", {
+          scrollTrigger: {
+            trigger: ".page2imgg",
+            start: "top top",
+          },
+          textContent: '0%',
+          duration: 1,
+          ease: Power1.easeIn,
+          snap: { textContent: 1 },
+          onUpdate: function () {
+            this.targets().forEach((t) => {
+              t.textContent = (parseInt(t.textContent) + '+').toLocaleString();
+            });
+          },
+        });
+        gsap.from(".odometer24", {
+          scrollTrigger: {
+            trigger: ".page2imgg",
+            start: "top top",
+          },
+          textContent: '0%',
+          duration: 1,
+          ease: Power1.easeIn,
+          snap: { textContent: 1 },
+          onUpdate: function () {
+            this.targets().forEach((t) => {
+              t.textContent = (parseInt(t.textContent) + '+').toLocaleString();
+            });
+          },
+        });
+
+      gsap.to("#kite1", {
+        scrollTrigger: {
+          trigger: ".hero",
+          scrub: true,
+          start: "top top",
+          end: "+=1000",
+        },
+        y: "-40vw",
+        ease: "cubic-bezier(0.42, 0, 0.58, 1)",
+        transform: "rotate(45deg)"
+      });
+      gsap.to("#kite2", {
+        scrollTrigger: {
+          trigger: ".hero",
+          scrub: true,
+          start: "top top",
+          end: "+=1000",
+        },
+        y: "-50vw",
+        transform: "rotate(-45deg)",
+        ease: "cubic-bezier(0.42, 0, 0.58, 1)",
+      });
+      gsap.to("#kite2", {
+        scrollTrigger: {
+          trigger: ".hero",
+          scrub: true,
+          start: "top top",
+          end: "+=1000",
+        },
+        y: "-20vw",
+        transform: "rotate(-45deg)",
+        ease: "cubic-bezier(0.42, 0, 0.58, 1)",
+      });
+      
     </script>
    
 
