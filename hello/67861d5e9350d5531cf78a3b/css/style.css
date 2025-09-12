@@ -2467,7 +2467,7 @@ body {
     white-space: normal;
     /* max-width: 673px; */
     width: 100%;
-    line-height: 40px;
+    line-height: 47px;
     position: relative
 }
 
@@ -2500,7 +2500,20 @@ body {
     align-items: center;
     padding: 10px 16px;
     display: flex;
-    box-shadow: 0 4px 31px #0000000d
+    box-shadow: 0 4px 31px #0000000d;
+    animation: anim 0.5s ease-in-out infinite;
+}
+@keyframes anim {
+    0% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(5px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+    
 }
 
 .hero-banner-text {

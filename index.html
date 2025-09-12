@@ -254,7 +254,7 @@ id="kite1"
   <img src="./assets/footer-clouds 2.png" class="absolute bottom-0 w-full h-auto object-cover z-[-1]" alt="">
 </div>
 <div class="relative w-full h-screen lg:h-full z-[-1]  page2imgg  relative ">
-  <img src="./assets/page2img.png"   class="relative top-[-15vw] w-full object-cover z-[-1] h-full " alt="">
+  <img src="./assets/page2img.png"   class="relative top-[-15vw]  w-full object-cover z-[-1] h-full " alt="">
   <div class="absolute p-8 lg:p-0 top-30 lg:top-35 lg:left-1/6 flex lg:gap-[96px] gap-[42px] flex-col w-full">
 
     <p
@@ -666,24 +666,34 @@ requestAnimationFrame(raf);
           trigger: ".hero",
           scrub: true,
           start: "top top",
-          end: "+=1000",
+          // end: "+=1000",
         },
-        y: "-50vw",
+        y: "-20vw",
         transform: "rotate(-45deg)",
-        ease: "cubic-bezier(0.42, 0, 0.58, 1)",
+        transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
       });
       gsap.to("#kite2", {
         scrollTrigger: {
           trigger: ".hero",
           scrub: true,
           start: "top top",
-          end: "+=1000",
+          // end: "+=1000",
         },
         y: "-20vw",
         transform: "rotate(-45deg)",
-        ease: "cubic-bezier(0.42, 0, 0.58, 1)",
+               transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
+
       });
-      
+      gsap.to(".page2imgg img", {
+        scrollTrigger: {
+          trigger: ".page2imgg",
+          scrub: true,
+          start: "top top",
+          end: "+=1000",
+        },
+        y: "-5vw",
+        transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
+      });
     </script>
    
 
