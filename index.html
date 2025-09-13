@@ -72,12 +72,15 @@
 
       width: 100%;
       position: relative;
-      z-index: -1;
-      background-color: #D8F0EF;
+      /* background-color: #D8F0EF; */
+      background: #D8F0EF;
 
 
     }
+    .hero{
+      /* background-color: #D8F0EF; */
 
+    }
     .footer-clouds {
       position: absolute;
       z-index: -1;
@@ -180,7 +183,7 @@
     .boxx {
       background: #f8f8f8;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     /* Active state with gradient */
@@ -203,9 +206,8 @@
 </head>
 
 <body>
-  <div class="main-wrap  h-full relative ">
     <div class="hero w-full h-full relative overflow-hidden">
-      <nav class="flex w-full h-[60px]  justify-around  items-center  z-[1000] pt-10  ">
+      <nav  class="flex w-full h-[100px]  top-0  justify-around  items-center  z-[1000]   ">
         <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[173px] w-[173px]  object-cover" alt="">
         <div
           class=" bg-[#2C2C30] btnnn lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
@@ -215,10 +217,10 @@
   <div class="w-layout-blockcontainer box heroy-section w-container ">
         <img src="./assets/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">
         <img src="./assets/kite.png" id="kite1"
-          class="lg:block hidden kite lg:left-[18%] left-1/10 absolute top-50  z-[-1] lg:bottom-[20%] lg:z-[100]" alt=""
+          class="lg:block hidden kite lg:left-[18%] left-[252px] absolute top-[472px]  z-[-1] lg:bottom-[20%] lg:z-[100]" alt=""
           data-scroll>
-        <img src="./assets/kite.png" id="kite2" data-scroll
-          class="lg:block hidden kite bottom-0 right-[18%] top-65 z-[-1] absolute lg:bottom-[10%] rotate-45 lg:z-[100]"
+        <img src="./assets/kite2.png" id="kite2" data-scroll
+          class="lg:block hidden kite top-[360px] left-[1007px]  z-[-1] absolute lg:bottom-[10%]  lg:z-[100]"
           alt="">
         <div class="w-full h-full flex items-center justify-center flex-col gap-[24px] ">
           <div class="div-block hero-banner">
@@ -296,80 +298,53 @@
         class="relative z-[-1]  top-[-20vw] lg:top-[-15vw]  w-full page1img object-cover  h-full object-cover " alt="">
       <img src="./assets/footer-clouds 2.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt="">
     </div>
-    <div class="relative w-full  lg:h-full  page2imgg  relative top-[-22vw]   lg:top-[-15vw] ">
-      <img src="./assets/page2.png" class="w-full 
-       object-cover h-[75vh] lg:h-full" alt="">
-      <div class="absolute z-[10] p-8 lg:p-0 top-0 lg:top-35 lg:left-1/6 flex lg:gap-[96px] gap-[42px] flex-col ">
+    <div class="relative  w-full lg:h-full top-[-22vw] lg:top-[-15vw]">
+  <!-- Background -->
+  <img src="./assets/page2.png" 
+       class="w-full object-cover h-full lg:h-[1000px] absolute z-[1] top-[-5vw]" 
+       alt="">
 
-        <p
-          class="page2text text-white font-semibold text-[25px] leading-[35px] lg:text-[40px] lg:leading-[48px] lg:block hidden">
-          <span class="ml-2">
-            In our culture,
-          </span>
-          <span id="split-target" class="page2textSpan text-span-3 block lg:inline">the human voice <br>
-            carries emotions, respect and <br>
-            personal connection that text <br>
-            message simply cannot match.
-          </span>
-        </p>
+  <!-- Content -->
+  <div class="relative z-[10] w-[80%] mx-auto lg:p-0 lg:top-[106px] flex flex-col gap-[96px] h-full">
 
-        <p
-          class="  block lg:hidden lg:text-[40px] text-white lg:leading-[40px] font-semibold text-[30px]  leading-[30px]">
-          <span id="split-target" class="page2textSpan text-span-3 block lg:inline">the human voice
-            carries emotions, respect and
-            personal connection that text
-            message simply cannot match.
-          </span>
-        <div class="hidden lg:flex  justify-between w-full text-white ">
-          <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
-            <p class="text-[16px] leading-none">Open Rate</p>
-          </div>
-          <div class="flex flex-col gap-[16px]">
-            <h2 class=" text-[30px] lg:text-[56px] font-bold">1M+</h2>
-            <p class="text-[16px] leading-none">Calls initiated</p>
-          </div>
-          <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer50 text-[30px] lg:text-[56px] font-bold">50+</h2>
-            <p class="text-[16px] leading-none">Enterprises</p>
-          </div>
-          <div class="flex flex-col gap-[16px]">
-            <h2 class="  odometer24 text-[30px] lg:text-[56px] font-bold">24/7</h2>
-            <p class="text-[16px] leading-none">Support</p>
-          </div>
+    <!-- Left-aligned Text -->
+    <p class="page2text text-white font-semibold text-[25px] leading-[35px] lg:text-[40px] lg:leading-[48px] hidden lg:block">
+      <span class="ml-2">In our culture,</span>
+      <span id="split-target" class="page2textSpan text-span-3 block lg:inline">
+        the human voice <br>
+        carries emotions, respect and <br>
+        personal connection that text <br>
+        message simply cannot match.
+      </span>
+    </p>
 
-        </div>
-        <div class="lg:hidden flex items-center justify-between  ">
-          <div class="flex  flex-col gap-[50px] text-white ">
-            <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer95 text-[40px] lg:text-[56px] font-bold">95%</h2>
-            <p class="text-[16px] leading-none">Open Rate</p>
-          </div>
-          <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer95 text-[40px] lg:text-[56px] font-bold">95%</h2>
-            <p class="text-[16px] leading-none">Open Rate</p>
-          </div>
-        </div>
-          <div class="flex  flex-col gap-[50px] text-white ">
-            <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer95 text-[40px] lg:text-[56px] font-bold">95%</h2>
-            <p class="text-[16px] leading-none">Open Rate</p>
-          </div>
-          <div class="flex flex-col gap-[16px]">
-            <h2 class=" odometer95 text-[40px] lg:text-[56px] font-bold">95%</h2>
-            <p class="text-[16px] leading-none">Open Rate</p>
-          </div>
-        </div>
-        </div>
+    <!-- Numbers Row -->
+    <div class="hidden lg:flex justify-between items-start w-full text-white text-center">
+      <div class="flex flex-col items-start gap-[16px]">
+        <h2 class="odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
+        <p class="text-[16px] leading-none">Open Rate</p>
+      </div>
+      <div class="flex flex-col items-start gap-[16px]">
+        <h2 class="text-[30px] lg:text-[56px] font-bold">1M+</h2>
+        <p class="text-[16px] leading-none">Calls initiated</p>
+      </div>
+      <div class="flex flex-col items-start gap-[16px]">
+        <h2 class="odometer50 text-[30px] lg:text-[56px] font-bold">50+</h2>
+        <p class="text-[16px] leading-none">Enterprises</p>
+      </div>
+      <div class="flex flex-col items-start gap-[16px]">
+        <h2 class="odometer24 text-[30px] lg:text-[56px] font-bold">24/7</h2>
+        <p class="text-[16px] leading-none">Support</p>
       </div>
     </div>
-    <div class="page2 w-full   lg:h-auto h-screen    pt-[5vw] relative  rounded-t-[40px] lg:top-[-20vw]  flex items-center flex-col  z-[10] ">
-      <img src="./assets/videoimg.png" class="w-full h-full absolute z-[1] top-[20vw] object-cover pointer-events-none" alt="">
-      <div
-        class="relative w-[90%] lg:w-[75%] h-full flex-col lg:flex-col  lg:top-1/6 flex items-center justify-center gap-[48px] z-[10] top-[10vw]">
-        <div
-          class="w-full  flex flex-col lg:flex-row items-left lg:items-center justify-between gap-[24px] lg:gap-[0px]">
-          <p class="lg:text-[34px] lg:block lg:block hidden text-[#2C2C30]  font-semibold leading-[34px]">Three simple
+  </div>
+
+
+    <div class="page2 w-full   lg:h-full h-screen     relative  rounded-t-[40px]   flex items-center flex-col rounded-t-[40px] z-[10] top-0   ">
+    <img src="./assets/page3admin.png" class="w-full h-[100vw] pointer-events-none left-0  absolute z-[10] object-cover rounded-t-[40px] top-[20vw] " alt="">
+      <div  class="relative w-[90%] lg:w-[80%] h-full flex-col lg:flex-col  lg:top-[32vw] flex items-center justify-center gap-[48px] z-[10] top-[10vw] ">
+        <div class="w-full  flex flex-col lg:flex-row items-left lg:items-center justify-between gap-[24px] lg:gap-[0px]">
+          <p class="lg:text-[34px] lg:block  hidden text-[#2C2C30]  font-semibold leading-[34px]">Three simple
             steps to spread <br> Dashain joy with your
             personal touch</p>
           <p class=" text-[24px] leading-[24px] lg:hidden  gap- text-[#2C2C30]  font-semibold ">Three simple steps to
@@ -424,8 +399,7 @@
   </div>
 </div>
 
-          <div
-            class="wrapper hidden   w-full h-[186px] bg-white rounded-[16px] lg:flex items-center justify-between  gap-[24px] p-[16px] ">
+          <div  class="wrapper hidden   w-full h-[186px] bg-white rounded-[16px] lg:flex items-center justify-between  gap-[24px] p-[16px] ">
             <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
               flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
               <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
@@ -449,7 +423,7 @@
                 <p class="text-[14px]">Add a personal touch by <br> recording your own message.</p>
               </div>
             </div>
-
+            
             <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
               flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
               <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
@@ -461,17 +435,14 @@
                 <p class="text-[14px]">Simply upload your contact list <br> and get ready to launch.</p>
               </div>
             </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-      <section class="relative w-full lg:h-auto h-screen   top-[-10vw] flex items-center flex-col z-[10] ">
-
-    <img src="./assets/page3cloude.png" class="w-full h-full absolute pointer-events-none z-[-  1] top-0 object-cover"
-      alt="">
-    <!-- <img src="./assets/page3mainimg.png" class="w-full h-auto pointer-events-none  absolute z-[-1] object-cover"  alt=""> -->
-
+      <section class="relative w-full lg:h-auto h-screen   top-[30vw] flex items-center flex-col z-[10] " style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 55%);">
+    <!-- <img src="./assets/stickyimgg.png" class="w-full h-auto pointer-events-none  absolute z-[10] object-cover"  alt=""> -->
     <div class="relative w-[100%]  flex-col  flex items-center gap-[48px] z-[10] relative top-[20vh] lg:top-0 ">
       <div class="w-full flex flex-col items-center gap-[24px] text-center ">
         <h1 class="text-[32px] font-semibold leading-[32px]">Perfect for Every Businesses</h1>
@@ -482,8 +453,8 @@
       </div>
     </div>
     <div class="sticky-heading  w-full">
-      <img src="./assets/stickyimg.png" class="w-full h-auto pointer-events-none  absolute z-[-1] object-cover" alt="">
-      <img src="./assets/logopage3.png" alt="" class="w-[20%] mx-auto relative left-[50%] z-[10] translate-x-[-50%]">
+        <img src="./assets/stickyimg.png" class="w-full h-[1800px] pointer-events-none  absolute z-[-1] object-cover top-[-10vw] " alt="">
+        <img src="./assets/logopage3.png" alt="" class="w-[20%] mx-auto relative left-[50%] z-[10] translate-x-[-50%]">
     </div>
     <ul class="relative ">
       <div class="boxcontainerr ">
@@ -569,7 +540,7 @@
   </div>
 
 
-  <div class="page4 w-full  lg:h-screen   relative lg:rounded-t-[40px] ">
+  <div class="page4 w-full  lg:h-screen   relative lg:rounded-t-[40px] top-[30vw] z-[100] ">
     <img src="./assets/footer.png" class="w-full h-full pointer-events-none   absolute z-[10]  " alt="">
     <div class="relative w-full   flex-col top-[20%] flex z-[100] items-center gap-[24px] lg:gap-[20px] ">
       <h1 class="font-semibold text-[64px] text-center leading-[45px] text-white/60">
@@ -579,7 +550,7 @@
       <p class="text-center  text-white text-[16px]">Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
       <div class="flex w-full  h-full gap-[24px] items-center justify-center mt-[50px] flex-col">
         <div
-          class="relative z-[100] w-[340px]  lg:w-[408px] h-[225px]  bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
+          class="relative z-[100] w-[492px]  lg:w-[492px] h-[209px]  bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
           <p class="text-[24px] font-semibold ">Ting Ting Dashain Pack</p>
           <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
               class="w-[25px] h-[25px]" alt=""> Lowest call rate – only 70 paisa per call</p>
@@ -601,7 +572,7 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-[80vh] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[100] ">
+  <div class="w-full h-[80vh] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[50] top-[30vw] ">
     <div class="flex w-full  justify-evenly flex  ">
       <h1 class="text-[40px] leading-none font-semibold">Ready to Make This <br> <span
           style="background: linear-gradient(90deg, #2CD0C1 0%, #7E7FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
@@ -839,9 +810,9 @@
       start: "top top",
       end: "+=1000",
     },
-    y: "-40vw",
+    y: "-20vw",
     ease: "cubic-bezier(0.42, 0, 0.58, 1)",
-    transform: "rotate(45deg)"
+    // transform: "rotate(45deg)"
   });
   gsap.to("#kite2", {
     scrollTrigger: {
@@ -850,7 +821,7 @@
       start: "top top",
       // end: "+=1000",
     },
-    y: "-20vw",
+    y: "-10vw",
     transform: "rotate(-45deg)",
     transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
   });
@@ -861,7 +832,7 @@
       start: "top top",
       // end: "+=1000",
     },
-    y: "-20vw",
+    y: "-10vw",
     transform: "rotate(-45deg)",
     transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
   });
