@@ -2,8 +2,14 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    
 }
-
+@media (max-width: 900px) {
+    html,body {
+        overflow: hidden;
+    }
+    
+}
 article,
 aside,
 details,
@@ -453,11 +459,10 @@ figcaption {
     margin-top: 5px
 }
 
-ul,
-ol {
+ul{
     margin-top: 0;
     margin-bottom: 10px;
-    padding-left: 40px
+    padding: 150px 150px;
 }
 
 .w-list-unstyled {
@@ -2494,16 +2499,19 @@ body {
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     background-color: #fff;
-    border: 2px solid #0000001a;
+    /* border: 2px solid #0000001a; */
     border-radius: 28px;
     justify-content: center;
     align-items: center;
+    /* padding: 10px 16px; */
+    width: 283px;
     padding: 10px 16px;
     display: flex;
     box-shadow: 0 4px 31px #0000000d;
+    height: 30px;
     animation: anim 0.5s ease-in-out infinite;
 }
-@keyframes anim {
+/* @keyframes anim {
     0% {
         transform: translateY(0px)
     }
@@ -2514,7 +2522,7 @@ body {
         transform: translateY(0px)
     }
     
-}
+} */
 
 .hero-banner-text {
     color: var(--black);
@@ -2542,7 +2550,7 @@ body {
 }
 
 .hero-form-container {
-    border: 2px solid #0000001a;
+    /* border: 2px solid #0000001a; */
     border-radius: 25px;
     justify-content: center;
     align-items: center;
@@ -2567,7 +2575,7 @@ body {
 .hero-form-inner {
     z-index: 1;
     background-color: var(--background);
-    border: 2px solid #0000001a;
+    /* border: 2px solid #0000001a; */
     border-radius: 25px;
     order: -1;
     min-width: 100%;

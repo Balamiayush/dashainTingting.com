@@ -61,35 +61,11 @@
       text-align: center;
     }
 
-    .wrapper {
-      position: relative;
-    }
-
-    .highlight {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      /* start at box 1 */
-      width: 306px;
-      height: 154px;
-      border-radius: 16px;
-      background: linear-gradient(90deg, rgba(130, 122, 202, 0.3) 0%, rgba(82, 169, 197, 0.3) 51.31%, rgba(37, 214, 193, 0.3) 100%);
-      pointer-events: none;
-      transition: all 0.4s ease;
-      z-index: 1;
-    }
+    
 
     /* move highlight when first box is hovered */
-    .wrapper .boxx:nth-child(1):hover~.highlight {
-      left: 16px;
-      /* stays at first */
-    }
-
-    /* move highlight when second box is hovered */
-    .wrapper .boxx:nth-child(2):hover~.highlight {
-      left: calc(16px + 306px + 24px);
-      /* position at box 2 */
-    }
+   
+   
   </style>
 
   <style>
@@ -199,12 +175,14 @@
       justify-content: end;
     }
 
-    .boxcontainerr:nth-child(odd) {
-      margin-right: 10vw;
+    li:nth-child(odd) {
+      /* margin-left: 10vw; */
+      /* background: #000; */
     }
 
-    .boxcontainerr:nth-child(even) {
-      margin-right: 10vw;
+    li:nth-child(even) {
+      /* margin-right: -10vw; */
+      /* background: red; */
     }
 
    .boxx {
@@ -230,9 +208,9 @@
 
 <body>
   <div class="main-wrap  h-full relative ">
-    <div class="hero w-full h-full relative  overflow-hidden">
+    <div class="hero w-full h-full relative">
       <nav class="flex w-full h-[60px]  justify-around  items-center  z-[1000] pt-10  ">
-        <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[15vw] w-[20vw]  object-cover" alt="">
+        <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[173px] w-[173px]  object-cover" alt="">
         <div
           class=" bg-[#2C2C30] lg:h-[52px] h-[40px] w-[180px] lg:w-[207px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
           <a href="https://app.tingting.io/signup" target="_blank">Start Campaign Now!</a>
@@ -249,7 +227,7 @@
         <div class="w-full h-full flex items-center justify-center flex-col gap-[24px] ">
           <div class="div-block hero-banner">
             <div class="div-block-2">
-              <p class="hero-banner-text">🎉 दशैं विशेष अफर / Dashain Special Offer</p>
+              <p class="hero-banner-text">🎉<span class="font-bold">दशैं विशेष अफर</span>/Dashain Special Offer</p>
             </div>
           </div>
           <h1 data-w-id="6465664c-9973-09dd-c854-c18cf6f1ccd8" style="opacity:0"
@@ -318,11 +296,11 @@
           </div>
         </div>
       </div>
-      <img src="./assets/footer-clouds 2.png" class="absolute bottom-0 w-full h-auto object-cover z-[-1]" alt="">
+      <img src="./assets/page1.png" class="relative  top-0 lg:top-[-15vw]  w-full page1img object-cover z-[-1] h-full object-cover " alt="">
+      <img src="./assets/footer-clouds 2.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt="">
     </div>
-    <div class="relative w-full h-screen lg:h-full z-[-1]  page2imgg  relative " style="background: linear-gradient(89.83deg, #00D0B9 1.65%, #827ACA 98.25%);
-">
-      <img src="./assets/page2img.png" class="relative  top-0 lg:top-[-15vw]  w-full object-cover z-[-1] h-full " alt="">
+    <div class="relative w-full  lg:h-full z-[-1]  page2imgg  relative lg:top-[-10vw] " >
+      <img src="./assets/page2.png" alt="">
       <div class="absolute p-8 lg:p-0 top-30 lg:top-35 lg:left-1/6 flex lg:gap-[96px] gap-[42px] flex-col w-full">
 
      <p class="page2text text-white font-semibold text-[25px] leading-[35px] lg:text-[40px] lg:leading-[48px] lg:block hidden">
@@ -366,10 +344,10 @@
     </div>
     <div
       class="page2 w-full   lg:h-auto h-screen    pt-[5vw] relative  rounded-t-[40px] top-[-20vw]  flex items-center flex-col   ">
-      <img src="./assets/page3.png" class="w-full h-[630vh] absolute z-[-1] top-0 object-cover pointer-events-none"
+      <img src="./assets/page3.png" class="w-full h-full absolute z-[-1] top-0 object-cover pointer-events-none"
         alt="">
       <div
-        class="relative w-[80%] lg:w-[75%] h-full flex-col lg:flex-col  lg:top-1/6 flex items-center justify-center gap-[48px]">
+        class="relative w-[80%] lg:w-[75%] h-full flex-col lg:flex-col  lg:top-1/6 flex items-center justify-center gap-[48px] top-[10vw]">
         <div
           class="w-full  flex flex-col lg:flex-row items-left lg:items-center justify-between gap-[24px] lg:gap-[0px]">
           <p class="lg:text-[34px] lg:block lg:block hidden text-[#2C2C30]  font-semibold leading-[34px]">Three simple
@@ -385,13 +363,13 @@
         </div>
         <div class="flex flex-col items-center justify-center  gap-[24px]">
        
-<div class="videodiv h-[572px] w-[35%] lg:w-full rounded-[24px] overflow-hidden">
+<div class="videodiv lg:h-[572px] w-[35%] h-[350px] lg:w-full rounded-[16px] lg:rounded-[24px] overflow-hidden ">
   <video id="stepVideo" class="w-full h-full object-cover" autoplay muted controls></video>
 </div>
 
-<div class="wrapper w-full h-[186px] bg-white rounded-[16px] flex overflow-hidden items-center gap-[24px] p-[16px] relative">
-  
-  <div class="boxx w-[306px] rounded-[16px] h-[154px] p-[16px] flex gap-[16px] justify-center flex-col relative overflow-hidden">
+<div class="wrapper w-full h-[186px] bg-white rounded-[16px] flex items-center justify-between  gap-[24px] p-[16px] ">
+  <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
     <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
       <p class="text-[#4318FF] text-[10px]">Step 1</p>
@@ -402,9 +380,9 @@
     </div>
   </div>
 
-  <div class="boxx w-[306px] rounded-[16px] h-[154px] p-[16px] flex gap-[16px] justify-center flex-col relative overflow-hidden">
-        <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
-
+  <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
+    <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
       <p class="text-[#4318FF] text-[10px]">Step 2</p>
     </div>
@@ -414,7 +392,8 @@
     </div>
   </div>
 
-  <div class="boxx w-[306px] rounded-[16px] h-[154px] p-[16px] flex gap-[16px] justify-center flex-col relative overflow-hidden ">
+  <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
     <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full relative">
       <p class="text-[#4318FF] text-[10px]">Step 3</p>
@@ -435,11 +414,11 @@
   </div>
   <section class="relative w-full lg:h-auto h-screen   top-[-10vw] flex items-center flex-col  ">
 
-    <img src="./assets/page3cloude.png" class="w-full h-[400vh] absolute pointer-events-none z-[-1] top-0 object-cover"
+    <img src="./assets/page3cloude.png" class="w-full h-full absolute pointer-events-none z-[-1] top-0 object-cover"
       alt="">
     <!-- <img src="./assets/page3mainimg.png" class="w-full h-auto pointer-events-none  absolute z-[-1] object-cover"  alt=""> -->
 
-    <div class="relative w-[100%]  flex-col  flex items-center gap-[48px] z-[10] ">
+    <div class="relative w-[100%]  flex-col  flex items-center gap-[48px] z-[10] relative top-[20vh] lg:top-0 ">
       <div class="w-full flex flex-col items-center gap-[24px] text-center ">
         <h1 class="text-[32px] font-semibold leading-[32px]">Perfect for Every Businesses</h1>
         <p class="text-[#4D4D4D] text-[18px] lg:block hidden">Voice carries emotions, context, and authenticity that
@@ -449,7 +428,8 @@
       </div>
     </div>
     <div class="sticky-heading  w-full">
-      <img src="./assets/logopage3.png" alt="" class="w-[20%] mx-auto relative left-[50%] translate-x-[-50%]">
+      <img src="./assets/stickyimg.png" class="w-full h-auto pointer-events-none  absolute z-[-1] object-cover" alt="">
+      <img src="./assets/logopage3.png" alt="" class="w-[20%] mx-auto relative left-[50%] z-[10] translate-x-[-50%]">
     </div>
     <ul class="relative ">
       <div class="boxcontainerr ">
@@ -529,7 +509,7 @@
 
   </section>
 
-  <div class="page4 w-full  lg:h-screen h-[150vh]  relative lg:rounded-t-[40px] ">
+  <div class="page4 w-full  lg:h-screen   relative lg:rounded-t-[40px] ">
     <img src="./assets/footer.png" class="w-full h-full pointer-events-none   absolute z-[1]  " alt="">
     <div class="relative w-full   flex-col top-[20%] flex z-[100] items-center gap-[24px] lg:gap-[20px] ">
       <h1 class="  call1 font-semibold text-[64px] text-center leading-[45px] text-white">1 Call = Just <span
@@ -709,11 +689,13 @@
 
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".page2textSpan",
+      trigger: ".page1img",
       scrub: true,
-      start: "top 120px",
-      end: "+=1000",
-      pin: ".page2imgg", // ✅ pin only desktop
+      start: "top top",
+      end: "+=500",
+      markers: true,
+
+      // pin: ".page2imgg", // ✅ pin only desktop
       // markers: true
     },
   });
@@ -732,7 +714,7 @@ mm.add("(max-width: 991px)", () => {
       start: "top 50px",
       end: "+=1000",
           pinSpacing: false,
-                pin: true, // ✅ pin only desktop
+                // pin: true, // ✅ pin only desktop
 
       // ❌ no pin here (removes the space issue)
       markers: true
@@ -842,10 +824,10 @@ mm.add("(max-width: 991px)", () => {
 
 <script>
   const videos = [
-    "./assets/audio upload.webm",
-    "./assets/landing page.webm",
-    "./assets/campaign run.webm",
-    "./assets/new campaign and contact upload.webm"
+    "./assets/Dashain campaign 3 videos/STEP 1 new campaign and contact upload.mov",
+    "./assets/Dashain campaign 3 videos/STEP 2 audio upload.mov",
+    "./assets/Dashain campaign 3 videos/STEP 3 campaign run.mov",
+    // "./assets/new campaign and contact upload.webm"
   ];
 
   const videoElement = document.getElementById("stepVideo");
