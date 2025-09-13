@@ -6,7 +6,7 @@ html {
 }
 @media (max-width: 900px) {
     html,body {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     
 }
@@ -2304,6 +2304,13 @@ body {
     font-family: Aileron, Trebuchet MS, sans-serif;
    
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
 
 .box {
     flex-flow: column;
@@ -2313,7 +2320,8 @@ body {
     padding-left: 10px;
     gap: 40px;
     padding-right: 10px;
-    display: flex
+    display: flex;
+    /* position: relative; */
 }
 
 .box.nav-box {
