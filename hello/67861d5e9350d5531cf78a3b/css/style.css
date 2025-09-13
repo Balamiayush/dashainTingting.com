@@ -461,7 +461,9 @@ figcaption {
 
 ul{
     margin-top: 0;
-    margin-bottom: 10px;
+    /* background: red; */
+     margin-top: -100px;
+    /* margin-bottom: 10px; */
     padding: 150px 150px;
 }
 
