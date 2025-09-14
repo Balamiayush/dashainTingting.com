@@ -2673,6 +2673,23 @@ body {
     padding-bottom: 10px;
     display: flex
 }
+@media screen and (max-width: 600px) {
+    .hero-form-field.tel-container {
+        height: 56px;
+        padding: 8px;
+        width: 317px;
+    }
+    .hero-form-inner{
+        padding: 16px;
+        gap: 24px;
+        width: 349px;
+        height: 312px;
+    }
+    .box{
+        top: 50px;
+        position: relative;
+    }
+}
 
 .hero-form-field.otp-field {
     display: none
@@ -3666,7 +3683,7 @@ body {
     }
 
     .tel-field {
-        font-size: 18px
+        /* font-size: 18px */
     }
 
     .tel-field:focus-visible,
@@ -4059,7 +4076,7 @@ body {
     }
 
     .tel-field {
-        font-size: 16px
+        /* font-size: 16px */
     }
 
     .tel-field:active {
