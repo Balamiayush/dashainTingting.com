@@ -466,13 +466,11 @@ figcaption {
     ul {
     
         /* background: red; */
-        margin-top: -65vh;
+        /* margin-top: -65vh; */
         /* margin-bottom: 10px; */
-        padding: 200px 200px ;
+    
+        padding: 166px 166px ;
     }
-}
-ul{
- margin-top: -45vh;
 }
 
 .w-list-unstyled {
@@ -3002,7 +3000,7 @@ body {
 }
 
 .image-2 {
-    max-width: 85px
+    max-width: 173.74px;
 }
 
 .text-block-8 {
@@ -3012,15 +3010,16 @@ body {
 }
 
 .text-block-9 {
-    padding-bottom: 12px;
-    font-size: 24px;
-    font-weight: 600;
+    /* padding-bottom: 12px; */
+    font-size: 16px;
+    color: #4D4D4D; 
     line-height: 40px
 }
 
 .div-block-6 {
     border: 1px solid #ACC6C5;
-    width: 100%;
+    width: 79%;
+    margin: 0 auto;
     /* margin-top: 16px; */
     display: block
 }

@@ -80,8 +80,7 @@
 
     .hero {
    position: relative;
-      z-index: -1;
-      background-color: #D8F0EF;
+      
     }
 
     .footer-clouds {
@@ -140,11 +139,12 @@
   <style>
 
     .sticky-heading {
-      position: sticky !important;
-      top: 10px;
-      height: 50vh;
-      align-content: center;
-    }
+  position: sticky;
+     /* where it starts sticking */
+ 
+     /* allow content height to define the scroll area */
+  /* z-index: 20;    ensure it stays above bg image */
+}
 
     .box2 {
 
@@ -208,11 +208,11 @@
   <div class="desktop w-full h-full relative lg:block hidden">
   <div class="hero w-full h-full relative overflow-hidden">
     <div class="absolute z-[-1] w-full h-screen bg-[#D8F0EF] "></div>
-    <nav class="flex w-full h-[100px]  top-0  justify-around  items-center   z-[1000]    ">
+    <nav class="flex w-full h-[100px]  top-0  justify-around  items-center   ">
       <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[173px] w-[173px]  object-cover" alt="">
       <div
-        class=" bg-[#2C2C30] btnnn lg:h-[52px] h-[40px] w-[99px] lg:w-[207px] text-white text-[14px] lg:text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
-        <a href="https://app.tingting.io/signup" target="_blank">Start Now!</a>
+        class=" bg-[#2C2C30] btnnn lg:h-[52px] cursor-pointer  h-[40px] w-[99px] lg:w-[207px] text-white text-[14px] lg:text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
+        <a href="https://app.tingting.io/signup" target="_blank">Start Campaign Now!!</a>
       </div>
     </nav>
     <div class="w-layout-blockcontainer box heroy-section w-container ">
@@ -305,7 +305,7 @@
 
 
     <!-- Content -->
-    <div class="relative z-[10] w-[80%] mx-auto lg:p-0 lg:top-[106px] flex flex-col gap-[96px] h-full">
+    <div class="relative z-[10] w-[75%] mx-auto lg:p-0 lg:top-[106px] flex flex-col gap-[96px] h-full">
 
       <!-- Left-aligned Text -->
       <p
@@ -320,7 +320,7 @@
       </p>
 
       <!-- Numbers Row -->
-      <div class="hidden lg:flex justify-between items-start w-full text-white text-center">
+      <div class="hidden ml-2 lg:flex justify-between items-start w-full text-white text-center">
         <div class="flex flex-col items-start gap-[16px]">
           <h2 class="odometer95 text-[30px] lg:text-[56px] font-bold">95%</h2>
           <p class="text-[16px] leading-none">Open Rate</p>
@@ -464,11 +464,11 @@
           text alone can't capture. It's the magic that transforms messages into memorable experiences. </p>
       </div>
     </div>
-    <div class="sticky-heading  w-full">
+    <div class="sticky-heading  w-full h-[50vh] lg:h-[90vh] top-[10px] lg:top-[10vh]  ">
         <img src="./assets/stickyimg.png" class="w-full h-[1800px] pointer-events-none  absolute z-[-1] object-cover top-[-10vw] " alt="">
-        <img src="./assets/logopage3.png" alt="" class="w-[20%]  relative left-[50%] z-[10] translate-x-[-50%] top-1/2  ">
+        <img src="./assets/logopage3.png" alt="" class="w-[20%]  relative left-[50%] z-[10]  translate-x-[-50%] top-[20vw]">
     </div>
-    <ul class="relative ">
+    <ul class="relative  mt-[-90vh] ">
       <div class="boxcontainerr ">
         <li>
           <div
@@ -562,9 +562,9 @@
           <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
               class="w-[25px] h-[25px]" alt=""> Perfect for festivals, offers, and greetings</p>
         </div>
-        <div class="relative z-[100] flex  items-center justify-center gap-[16px]   ">
+        <div class="relative  z-[100] flex  items-center justify-center gap-[16px]   ">
           <div style="padding: 13px 25px;"
-            class=" bg-[#2C2C30] lg:h-[52px] h-[40px] w-[180px] lg:w-[254px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer btnn ">
+            class="btnnn bg-[#2C2C30]  lg:h-[52px] h-[40px] w-[180px] lg:w-[254px] text-white text-[16px] rounded-full flex justify-center items-center cursor-pointer btnn ">
             <p>Claim your festive offer now</p>
           </div>
           <div style="border: 1px solid #2C2C30; padding: 13px 25px;"
@@ -575,7 +575,7 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-[80vh] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[50] top-[30vw] ">
+  <div class="w-full h-[540px] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[50] top-[30vw] rounded-t-[40px]">
     <div class="flex w-full  justify-evenly flex  ">
       <h1 class="text-[40px] leading-none font-semibold">Ready to Make This <br> <span
           style="background: linear-gradient(90deg, #2CD0C1 0%, #7E7FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
@@ -614,9 +614,11 @@
     </div>
   </div>
   </div>
-<div class="w-full h-full relative lg:hidden block ">
+
+
+<div class="w-full h-full relative lg:hidden block overflow-hidden ">
   <div class="hero w-full h-full relative overflow-hidden">
-    <nav class="flex w-full h-[60px]  top-0  justify-around  items-center     ">
+    <nav class="flex w-full h-[60px]  top-0  justify-around  items-center   ">
       <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[173px] w-[173px]  object-cover" alt="">
       <div
         class=" bg-[#2C2C30] btnnn lg:h-[52px] h-[40px] w-[99px] lg:w-[207px] text-white text-[14px] lg:text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
@@ -790,11 +792,11 @@
           capture. It's the magic that transforms <br> messages into memorable experiences. </p>
       </div>
       <section>
-        <div class="sticky-heading  w-full">
+        <div class="sticky-heading  w-full top-[10px] h-[50vh]">
           <img src="./assets/logopage3.png" alt=""
             class="w-[193px] h-[193px] relative left-[50%] z-[10] translate-x-[-50%] top-1/2 translate-y-[-50%] ">
         </div>
-        <ul class="relative flex gap-[40px]">
+        <ul class="relative flex gap-[40px] mt-[-45vh]">
           <div class="boxcontainerr flex gap-[24px] flex-col ">
             <div id="mobileboxx"
               class="boxxx w-[160px] h-[108px] p-[16px] flex  flex-col items-center justify-center gap-[16px] rounded-[16px]">
