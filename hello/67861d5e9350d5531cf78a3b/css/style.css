@@ -24,7 +24,7 @@ hgroup,
 menu,
 section,
 summary {
-    display: block
+    /* display: block */
 }
 
 audio,
@@ -271,7 +271,7 @@ body {
 img {
     vertical-align: middle;
     max-width: 100%;
-    display: inline-block
+    /* display: inline-block */
 }
 
 html.w-mod-touch * {
@@ -462,12 +462,17 @@ figcaption {
     margin-top: 5px
 }
 
+@media only screen and (min-width:1024px) {
+    ul {
+    
+        /* background: red; */
+        margin-top: -65vh;
+        /* margin-bottom: 10px; */
+        padding: 200px 200px ;
+    }
+}
 ul{
-    margin-top: 0;
-    /* background: red; */
-     margin-top: -40vh;
-    /* margin-bottom: 10px; */
-    padding: 150px 150px;
+ margin-top: -45vh;
 }
 
 .w-list-unstyled {
