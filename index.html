@@ -1179,7 +1179,29 @@ gsap.to("#kite1", {
   });
 
 
+ const audioPlayer = document.getElementById("audioPlayer");
+  const playBtn = document.getElementById("playBtn");
 
+  // Play after first interaction
+  function startAudio() {
+    audioPlayer.play().catch(() => {
+      console.log("Autoplay blocked until user interaction");
+    });
+    window.removeEventListener("mousemove", startAudio, true);
+    window.removeEventListener("touchstart", startAudio, true);
+  }
+
+  window.addEventListener("mousemove", startAudio, true);
+  window.addEventListener("touchstart", startAudio, true);
+
+  // Play/pause toggle
+  playBtn.addEventListener("click", () => {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  });
  
   
 
