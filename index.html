@@ -969,6 +969,60 @@ border: 1px solid #D5D5D5
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
 <script src="./split-type@0.3.4/umd/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script>
+    var Webflow = Webflow || [];
+    var actionURL = "https://app.tingting.io/api/call-handler/";
+
+    function otpVerify() {
+      let otpInput = document.querySelector(".hero-form-field.otp-field");
+      otpInput.style.display = "block";
+      otpInput.setAttribute("required", true);
+      console.log("otp verified");
+  
+    }
+    Webflow.push(function () {
+      // === Custom Form Handling ===
+
+      // unbind webflow form handling
+      $(document).off("submit");
+
+      // new form handling
+      $("form").submit(function (evt) {
+        evt.preventDefault();
+        var form = $(this)[0];
+        var formData = new FormData(form);
+        document.querySelector(".w-form-done").style.display = "none";
+        document.querySelector(".w-form-fail").style.display = "none";
+        // 🔥 Remove empty fields
+        for (let [key, value] of formData.entries()) {
+          if (!value.trim()) { // Check if the value is empty
+            formData.delete(key);
+          }
+        }
+
+      fetch(actionURL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json", 
+  },
+  body: JSON.stringify(Object.fromEntries(formData)),
+})
+          .then((response) => response.json()) // Convert response to JSON
+          .then((data) => {
+            if (data.error) {
+              throw new Error(data.error); // Throw error if server returns an error message
+            }
+            document.querySelector(".w-form-done").style.display = "block";
+            document.querySelector("#done-message").innerHTML = data.message;
+            otpVerify();
+          })
+          .catch((error) => {
+            document.querySelector("#error-message").innerHTML = error.message;
+            document.querySelector(".w-form-fail").style.display = "block";
+          });
+      });
+    });
+  </script>
 <script>
   // Custom: slow down inside .page2imgg
   const isDesktop = window.matchMedia("(min-width: 768px)").matches;
