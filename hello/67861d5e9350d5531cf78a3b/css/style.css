@@ -2591,7 +2591,7 @@ body {
 
 .hero-form-inner {
     z-index: 1;
-    background-color: var(--background);
+    background-color: #fff;
     /* border: 2px solid #0000001a; */
     border-radius: 25px;
     order: -1;
@@ -2643,13 +2643,13 @@ body {
 .hero-form-field {
     color: var(--black);
     -webkit-text-fill-color: inherit;
-    background-color: #ffffff;
+    background-color:  #F8F7FC;
     background-clip: content-box;
     border: 2px solid #807dcab3;
     border-radius: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
     font-size: 20px;
     margin-bottom: 0;
     font-weight: 600
@@ -2672,13 +2672,15 @@ body {
     /* margin-bottom: 16px; */
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex
+    background: #F8F7FC;    
+    display: flex;
+    padding-left:10px ;
 }
 @media screen and (max-width: 600px) {
     .hero-form-field.tel-container {
         height: 56px;
-        padding: 8px;
-        width: 317px;
+        /* padding: 8px; */
+        width: 320px;
     }
     .hero-form-inner{
         padding: 16px;
