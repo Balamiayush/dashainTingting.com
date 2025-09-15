@@ -2486,9 +2486,10 @@ body {
 .hero-title {
     text-align: center;
     white-space: normal;
+    font-weight: 900;
     /* max-width: 673px; */
     width: 100%;
-    line-height: 47px;
+    line-height: 48px;
     position: relative
 }
 
@@ -2642,7 +2643,7 @@ body {
 .hero-form-field {
     color: var(--black);
     -webkit-text-fill-color: inherit;
-    background-color: #0000;
+    background-color: #ffffff;
     background-clip: content-box;
     border: 2px solid #807dcab3;
     border-radius: 16px;
@@ -3152,7 +3153,7 @@ body {
     border-radius: 0;
     margin-bottom: 0;
     padding: 0;
-    font-size: 20px
+    font-size: 16px
 }
 
 .div-block-11 {
@@ -3287,9 +3288,6 @@ body {
     max-height: 400px
 }
 
-.text-span-3 {
-  
-}
 
 .rive {
     min-width: 200px;
@@ -3448,9 +3446,6 @@ body {
         display: flex
     }
 
-    .hero-title {
-        line-height: 1.2
-    }
 
     .text-span {
         display: inline

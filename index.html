@@ -104,10 +104,13 @@
         top: 20vh;
       }
     }
+    .footerboxxx{
+      padding: 20px 20px;
+    }
 
     .footerboxxx {
       backdrop-filter: blur(14px);
-      padding: 24px 32px;
+    
       /* From https://css.glass */
       background: rgba(255, 255, 255, 0.2);
       border-radius: 16px;
@@ -206,6 +209,28 @@
     .boxx:hover {
       transform: scale(1.05);
     }
+   /* #kite1 {
+  animation: kiteanim 2s infinite ease-in-out;
+}
+#kite2{
+  animation: kiteanim2 2s infinite ease-in-out;
+}
+
+@keyframes kiteanim {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-10px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+@keyframes kiteanim2 {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-5px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+} */
+
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -224,11 +249,11 @@
         </div>
       </nav>
       <div class="w-layout-blockcontainer box heroy-section w-container ">
-        <img src="./assets/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">
-        <img src="./assets/kite.png" id="kite1"
+        <img src="./assets/new/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">
+        <img src="./assets/new/kite.png" id="kite1"
           class="lg:block hidden kite lg:left-[18%] left-[252px] absolute top-[472px]  z-[-1] lg:bottom-[20%] lg:z-[100]"
-          alt="" data-scroll>
-        <img src="./assets/kite2.png" id="kite2" data-scroll
+          alt="" >
+        <img src="./assets/new/kite2.png" id="kite2" data-scroll
           class="lg:block hidden kite top-[360px] left-[1007px]  z-[-1] absolute lg:bottom-[10%]  lg:z-[100]" alt="">
         <div class="w-full h-full flex items-center justify-center flex-col gap-[24px] mt-10 ">
           <div class="div-block hero-banner ">
@@ -262,7 +287,7 @@
 
                       <div class="hero-form-field tel-container relative">
                         <div class="div-block-11">
-                          <div class="text-block-10"><img alt="Play Button" id="playBtn" src="./assets/playbtn.png"
+                          <div class="text-block-10"><img alt="Play Button" id="playBtn" src="./assets/new/playbtn.png"
                               class="w-full cursor-pointer  object-cover" alt=""></div>
                         </div>
                         <div class="relative flex flex-col">
@@ -271,17 +296,31 @@
 
                         </div>
                       </div>
-                      <p class="text-center">or</p>
+                      <div class="flex items-end justify-center gap-[10px] h-[12px]">
+                        <div style="width: 200px;
+height: 0px;
+opacity: 1;
+border-width: 1px;
+border: 1px solid #D5D5D5
+" class="line"></div>
+                        <p class="text-center text-[17px] font-semibold text-[#D5D5D5]">or</p>
+                          <div style="width: 200px;
+height: 0px;
+opacity: 1;
+border-width: 1px;
+border: 1px solid #D5D5D5
+" class="line"></div>
+                      </div>
                       <div class="hero-form-field tel-container">
                         <div class="div-block-11">
                           <div class="text-block-10">+977</div>
-                        </div><input class="tel-field w-input" maxlength="256" name="number" data-name="number"
+                        </div><input class="tel-field w-input text-[16px]" maxlength="256" name="number" data-name="number"
                           placeholder="Enter your phone number" type="tel" id="number-2" required="" />
                       </div>
                       <input class="hero-form-field otp-field w-input" maxlength="256" name="otp" data-name="otp"
                         placeholder="Enter OTP" type="text" id="otp-2" />
                       <div id="fom-button" data-w-id="f18a0f55-6ba3-ad67-9ffe-dbcef7b4b207" class="btn btn-gradient">
-                        <img loading="lazy" src=" hello/67861d5e9350d5531cf78a3b/svgexport-1 (2).svg"
+                        <img loading="lazy" src="https://balamiayush.github.io/dashainTingting.com/hello/67861d5e9350d5531cf78a3b/svgexport-1%20(2).svg"
                           alt="white logo tinting with black background" class="image-7" />
                         <div class="text-block-3">Send Demo to My Phone</div><input type="submit"
                           data-wait="Please wait..." class="submit-button-2 w-button" value="Submit" />
@@ -303,13 +342,13 @@
         </div>
       </div>
 
-      <img src="./assets/page1.png"
+      <img src="./assets/new/page1.png"
         class="relative z-[-1]  top-[-20vw] lg:top-[-15vw] lg:block hidden w-full page1img  " alt="">
     </div>
 
     <div class="relative hidden lg:block  w-full lg:h-full top-[-22vw] lg:top-[-15vw]">
       <!-- Background -->
-      <img src="./assets/page2.png" class="w-full  absolute z-[1] top-[-2vw]" alt="">
+      <img src="./assets/new/page2.png" class="w-full  absolute z-[1] top-[-2vw]" alt="">
 
 
       <!-- Content -->
@@ -348,10 +387,9 @@
         </div>
       </div>
 
-
       <div
         class="page2 w-full hidden   lg:h-full h-screen     relative  rounded-t-[40px]   lg:flex items-center flex-col rounded-t-[40px] z-[10] top-0   ">
-        <img src="./assets/page3admin.png"
+        <img src="./assets/new/page3admin.png"
           class="w-full h-[100vw] pointer-events-none left-0  absolute z-[10] object-cover rounded-t-[40px] top-[20vw] "
           alt="">
         <div
@@ -371,15 +409,16 @@
           </div>
           <div class="flex flex-col items-center justify-center  gap-[24px]">
             <div
-              class="videodiv bg-red-500 lg:h-[572px] w-[361px] h-[350px] lg:w-full rounded-[16px] lg:rounded-[24px] overflow-hidden ">
+              class="videodiv  lg:h-[572px] w-[361px] h-[350px] lg:w-full rounded-[16px] lg:rounded-[24px] overflow-hidden ">
               <video id="stepVideo" class="w-full h-full object-cover" muted controls></video>
             </div>
+            
+
             <div
-              class="slider w-full overflow-x-auto lg:hidden flex gap-4 snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing">
-              <!-- Slide 1 -->
-              <div
-                class="min-w-[329px] rounded-[16px] h-[154px] p-[16px] bg-white flex flex-col gap-[16px] snap-start relative">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
+              class="wrapper    w-full h-[186px] bg-white rounded-[16px] lg:flex items-center justify-between  gap-[24px] p-[16px] ">
+              <div  id="boxxDesktop" class=" boxx boxes min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
+                <img src="/assets/new/btnxx.png" class="absolute z-[10]" alt="">
                 <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
                   <p class="text-[#4318FF] text-[10px]">Step 1</p>
                 </div>
@@ -389,68 +428,27 @@
                 </div>
               </div>
 
-              <!-- Slide 2 -->
-              <div
-                class="min-w-[329px] rounded-[16px] h-[154px] p-[16px] bg-white flex flex-col gap-[16px] snap-start relative">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
+              <div  id="boxxDesktop" class=" boxx boxes min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
+                <img src="/assets/new/btnxx.png" class="absolute z-[10]" alt="">
                 <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
                   <p class="text-[#4318FF] text-[10px]">Step 2</p>
                 </div>
-                <div class="flex flex-col gap-[8px] ">
+                <div class=" flex flex-col gap-[8px] ">
                   <p class="font-semibold text-[16px]">Record Voice</p>
                   <p class="text-[14px]">Add a personal touch by <br> recording your own message.</p>
                 </div>
               </div>
 
-              <!-- Slide 3 -->
-              <div
-                class="min-w-[329px] rounded-[16px] h-[154px] p-[16px] bg-white flex flex-col gap-[16px] snap-start relative">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
-                <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
-                  <p class="text-[#4318FF] text-[10px]">Step 3</p>
-                </div>
-                <div class="flex flex-col gap-[8px] ">
-                  <p class="font-semibold text-[16px]">Launch Campaign</p>
-                  <p class="text-[14px]">Get your campaign live <br> in just one click.</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="wrapper hidden   w-full h-[186px] bg-white rounded-[16px] lg:flex items-center justify-between  gap-[24px] p-[16px] ">
-              <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
+              <div id="boxxDesktop" class=" boxx boxes min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
               flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
-                <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
-                  <p class="text-[#4318FF] text-[10px]">Step 1</p>
-                </div>
-                <div class="flex flex-col gap-[8px] ">
-                  <p class="font-semibold text-[16px]">Create a call campaign</p>
-                  <p class="text-[14px]">Simply upload your contact list <br> and get ready to launch.</p>
-                </div>
-              </div>
-
-              <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
-              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
-                <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full ">
-                  <p class="text-[#4318FF] text-[10px]">Step 2</p>
-                </div>
-                <div class="flex flex-col gap-[8px] ">
-                  <p class="font-semibold text-[16px]">Record Voice</p>
-                  <p class="text-[14px]">Add a personal touch by <br> recording your own message.</p>
-                </div>
-              </div>
-
-              <div class="boxx min-w-[306px] rounded-[16px] h-[154px] p-[16px] 
-              flex gap-[16px] justify-center flex-col relative overflow-hidden snap-start">
-                <img src="/assets/btnxx.png" class="absolute z-[10]" alt="">
+                <img src="/assets/new/btnxx.png" class="absolute z-[10]" alt="">
                 <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full relative">
                   <p class="text-[#4318FF] text-[10px]">Step 3</p>
                 </div>
                 <div class="flex flex-col gap-[8px] ">
-                  <p class="font-semibold text-[16px]">Create a call campaign</p>
-                  <p class="text-[14px]">Simply upload your contact list <br> and get ready to launch.</p>
+                  <p class="font-semibold text-[16px]">Reach Your Audience</p>
+                  <p class="text-[14px]">Send your dashain wish instantly <br> to thousands of customers.</p>
                 </div>
               </div>
             </div>
@@ -473,17 +471,17 @@
         </div>
       </div>
       <div class="sticky-heading  w-full h-[50vh] lg:h-[90vh] top-[10px] lg:top-[10vh]  ">
-        <img src="./assets/stickyimg.png"
+        <img src="./assets/new/stickyimg.png"
           class="w-full h-[1800px] pointer-events-none  absolute z-[-1] object-cover top-[-10vw] " alt="">
-        <img src="./assets/logopage3.png" alt=""
+        <img src="./assets/new/logopage3.png" alt=""
           class="w-[20%]  relative left-[50%] z-[10]  translate-x-[-50%] top-[20vw]">
       </div>
       <ul class="relative  mt-[-90vh] ">
-        <div class="boxcontainerr ">
+        <div class="boxcontainerr">
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-              <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/home.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Banks and <br> Financial Institutes</p>
             </div>
 
@@ -491,7 +489,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[6px] rounded-[16px]">
-              <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Internet Service Providers <br> Providers</p>
             </div>
 
@@ -501,7 +499,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/groups.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/groups.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">NGOs & Communities</p>
             </div>
 
@@ -509,7 +507,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Corporate Teams</p>
             </div>
 
@@ -519,7 +517,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/delivery-bike.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/delivery-bike.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Logistics and delivery</p>
             </div>
 
@@ -527,7 +525,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/heart-beat.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/heart-beat.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Healthcare</p>
             </div>
 
@@ -537,7 +535,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/court.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/court.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Municipalities</p>
             </div>
 
@@ -545,7 +543,7 @@
           <li>
             <div
               class="boxxx w-[300px] h-[172px] p-[24px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-              <img src="./assets/school,building.png" class="w-[40px] h-[40px] object-cover" alt="">
+              <img src="./assets/new/school,building.png" class="w-[40px] h-[40px] object-cover" alt="">
               <p class="text-center text-[20px] font-semibold">Educational Institutions</p>
             </div>
 
@@ -554,7 +552,7 @@
       </ul>
     </section>
     <div class="page4 w-full  lg:h-screen   relative lg:rounded-t-[40px] top-[30vw] z-[100] ">
-      <img src="./assets/footer.png" class="w-full h-full pointer-events-none   absolute z-[10]  " alt="">
+      <img src="./assets/new/footer.png" class="w-full h-full pointer-events-none   absolute z-[10]  " alt="">
       <div class="relative w-full   flex-col top-[20%] flex z-[100] items-center gap-[24px] lg:gap-[20px] ">
         <h1 class="font-semibold text-[64px] text-center leading-[45px] text-white/60">
           1 Call = Just <span class="text-[#fff]">70 Paisa</span>
@@ -563,13 +561,14 @@
         <p class="text-center  text-white text-[16px]">Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
         <div class="flex w-full  h-full gap-[24px] items-center justify-center mt-[50px] flex-col">
           <div
+          style="padding: 24px 32px;"
             class="relative z-[100] w-[492px]  lg:w-[492px] h-[209px]  bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
             <p class="text-[24px] font-semibold ">Ting Ting Dashain Pack</p>
-            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
+            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/new/celebrate.png"
                 class="w-[25px] h-[25px]" alt=""> Lowest call rate – only 70 paisa per call</p>
-            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
+            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/new/celebrate.png"
                 class="w-[25px] h-[25px]" alt=""> Easy to send personalized wishes </p>
-            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
+            <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/new/celebrate.png"
                 class="w-[25px] h-[25px]" alt=""> Perfect for festivals, offers, and greetings</p>
           </div>
           <div class="relative  z-[100] flex  items-center justify-center gap-[16px]   ">
@@ -602,7 +601,7 @@
               <div class="text-block-9">AI communication. Built for Nepal.</div>
             </div>
             <div class="div-block-8">
-              <img src="./assets/temple.png" class="w-[476px] h-[154] object-cover" alt="">
+              <img src="./assets/new/temple.png" class="w-[476px] h-[154] object-cover" alt="">
             </div>
           </div>
           <div class="div-block-6">
@@ -640,7 +639,7 @@
     <img src="./assets/mobilerightkite.png" class="top-[50px] z-[100] right-[13px] absolute  " alt="">
     <div class="hero w-full h-full relative overflow-hidden">
       <div class="w-layout-blockcontainer box heroy-section w-container ">
-        <img src="./assets/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">  
+        <img src="./assets/new/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">  
         <div class="flex flex-col items-center justify-center  top-[50px] relative gap-[48px] ">
         <div class="w-full h-full flex items-center justify-center flex-col gap-[24px]">
           <div class="div-block hero-banner ">
@@ -650,7 +649,7 @@
           </div>
           <h1 data-w-id="6465664c-9973-09dd-c854-c18cf6f1ccd8" style="opacity:0"
             class="hero-title lg:text-[40px] text-[35px] font-semibold lg:font-bold">Say
-            <span id="nepali-anim" class="text-span"> Happy Dashain </span> in <br> Your Own Voice.
+            <span id="nepali-anim" class="text-span">Happy Dashain</span> in <br> Your Own Voice.
           </h1>
           <p data-w-id="20c52f74-cbc7-b63e-bf76-947be95175be" style="opacity:0" class="paragraph-4">Send a voice + SMS
             greetings to your team <br> or customers instantly this Dashain.</p>
@@ -674,7 +673,7 @@
 
                       <div class="hero-form-field tel-container relative">
                         <div class="div-block-11">
-                          <div class="text-block-10"><img src="./assets/playbtn.png"
+                          <div class="text-block-10"><img src="./assets/new/playbtn.png"
                               class="w- cursor-pointer  object-cover" alt=""></div>
                         </div>
                         <div class="relative flex flex-col">
@@ -693,7 +692,7 @@
                       <input class="hero-form-field otp-field w-input" maxlength="256" name="otp" data-name="otp"
                         placeholder="Enter OTP" type="text" id="otp-2" />
                       <div id="fom-button" data-w-id="f18a0f55-6ba3-ad67-9ffe-dbcef7b4b207" class="btn btn-gradient">
-                        <img loading="lazy" src=" hello/67861d5e9350d5531cf78a3b/svgexport-1 (2).svg"
+                        <img loading="lazy" src="https://balamiayush.github.io/dashainTingting.com/hello/67861d5e9350d5531cf78a3b/svgexport-1%20(2).svg"
                           alt="white logo tinting with black background" class="image-7" />
                         <div class="text-block-3">Send Demo to My Phone</div><input type="submit"
                           data-wait="Please wait..." class="submit-button-2 w-button" value="Submit" />
@@ -715,7 +714,7 @@
         </div>
          </div>
       </div>
-      <img src="./assets/heromob.png"
+      <img src="./assets/new/heromob.png"
         class="relative z-[-1]  top-[-20vw] lg:top-[-15vw]  lg:hidden block   w-full page1img object-cover  h-[200px]  "
         alt="">
       <img src="./assets/footer-clouds 2.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt="">
@@ -761,7 +760,7 @@
     </div>
     <!-- adminboard -->
     <div class="w-full adminboardd relative top-[-40vw] lg:hidden block ">
-      <img src="./assets/page3admin.png"
+      <img src="./assets/new/page3admin.png"
         class="w-full h-[100vw]  pointer-events-none left-0  absolute z-[10] object-cover rounded-t-[40px] " alt="">
       <div class="paddingg p-[16px] relative z-[20] pt-[20vw] flex flex-col gap-[40px]">
         <div class="flex  flex-col justify-center gap-[24px]">
@@ -773,12 +772,12 @@
           </div>
 
         </div>
-     <video id="stepVideo" style="border-radius: 8px;" class="w-[361px] h-[289px]" muted controls></video>
+     <video id="stepVideo1" style="border-radius: 8px;" class="w-[361px] h-[289px]" muted controls></video>
 
 <div class="swiper-container slider flex gap-[16px] overflow-x-auto w-full h-full px-4 scroll-smooth">
   <!-- Step 1 -->
-  <div class="boxx min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
-    <img src="/assets/btnxx.png" class="absolute top-0 right-0 w-10 h-10 opacity-20" alt="">
+  <div  class="boxx mobilebox  min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
+    <img src="./assets/new/btnxx.png" class="absolute top-0 right-0  z-[-1] " alt="1">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full z-10">
       <p class="text-[#4318FF] text-[10px] font-semibold">Step 1</p>
     </div>
@@ -787,23 +786,23 @@
   </div>
 
   <!-- Step 2 -->
-  <div class="boxx min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
-    <img src="/assets/btnxx.png" class="absolute top-0 right-0 w-10 h-10 opacity-20" alt="">
+  <div  class="boxx mobilebox  min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
+    <img src="./assets/new/btnxx.png" class="absolute top-0 right-0  z-[-1]" alt="">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full z-10">
       <p class="text-[#4318FF] text-[10px] font-semibold">Step 2</p>
     </div>
-    <p class="font-semibold text-[16px]">Customize your message</p>
-    <p class="text-[14px] text-gray-600">Add voice, SMS, or email templates easily.</p>
+    <p class="font-semibold text-[16px]">Record Voice</p>
+    <p class="text-[14px] text-gray-600">Add a personal touch by recording your own message—straight from the heart.</p>
   </div>
 
   <!-- Step 3 -->
-  <div class="boxx min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
-    <img src="/assets/btnxx.png" class="absolute top-0 right-0 w-10 h-10 opacity-20" alt="">
+  <div  class="boxx mobilebox  min-w-[306px] bg-white rounded-[16px] shadow-lg h-[180px] p-4 flex flex-col gap-3 relative">
+    <img src="/assets/new/btnxx.png" class="absolute top-0 right-0 " alt="">
     <div class="bttn w-[54px] bg-[#DBFFEC] flex items-center justify-center h-[30px] rounded-full z-10">
       <p class="text-[#4318FF] text-[10px] font-semibold">Step 3</p>
     </div>
-    <p class="font-semibold text-[16px]">Track performance</p>
-    <p class="text-[14px] text-gray-600">Get real-time insights and analytics reports.</p>
+    <p class="font-semibold text-[16px]">Reach Your Audience</p>
+    <p class="text-[14px] text-gray-600">Send your dashain wish instantly to thousands of customers.</p>
   </div>
 </div>
       </div>
@@ -811,62 +810,67 @@
 
     <!-- stickysection -->
     <div class="w-full h-screen lg:hidden block relative top-[-20vw]  ">
-      <div class="paddingg p-[16px]">
-        <div class="flex flex-col gap-[16px] text-center  ">
+      <div class="paddingg ">
+        <div class="flex flex-col gap-[16px] text-center p-[16px]  ">
           <p class="text-[24px] font-semibold ">Perfect for Every Businesses</p>
           <p class="text-[14px] leading-none">Voice carries emotions, context, and authenticity that text alone can't
             capture. It's the magic that transforms <br> messages into memorable experiences. </p>
         </div>
         <section>
           <div class="sticky-heading  w-full top-[10px] h-[50vh]">
-            <img src="./assets/logopage3.png" alt=""
+            <div class="absolute z-[1] w-full h-[100svh] top-0" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 11.74%, rgba(255, 255, 255, 0.6) 100%);"></div>
+            <img src="./assets/new/stickycloude1.png" class="absolute z-[-1] right-[-1px]  p-0" alt="">
+            <img src="./assets/new/stickycloude2.png" class="absolute z-[-1] left-0 top-[10vw] p-0 " alt="">
+            <img src="./assets/new/stickycloude3.png" class="absolute z-[-1] left-0 top-[80vw] p-0 " alt="">
+      
+            <img src="./assets/new/logopage3.png" alt=""
               class="w-[193px] h-[193px] relative left-[50%] z-[10] translate-x-[-50%] top-1/2 translate-y-[-50%] ">
           </div>
           <ul class="relative flex gap-[40px] mt-[-45vh]">
-            <div class="boxcontainerr flex gap-[24px] flex-col ">
+            <div class="boxcontainerr p-[16] flex gap-[24px] flex-col ">
               <div id="mobileboxx"
                 class="boxxx w-[160px] h-[108px] p-[16px] flex  flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/home.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/home.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[
 14px] font-semibold">Banks and <br> Financial Institutes</p>
               </div>
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/groups.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/groups.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">NGOs & Communities</p>
               </div>
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/delivery-bike.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/delivery-bike.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">Logistics and delivery</p>
               </div>
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/court.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/court.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">Municipalities</p>
               </div>
             </div>
             <div class="boxcontainerr pt-[50vw] flex gap-[24px] flex-col ">
               <div id="mobileboxx"
                 class="boxxx w-[160px] h-[108px] p-[16px] flex  flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[
 14px] font-semibold">Internet Service Providers <br> Providers</p>
               </div>
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/teams.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">Corporate Teams</p>
               </div>
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/heart-beat.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/heart-beat.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">Healthcare</p>
               </div>
 
               <div id="mobileboxx"
                 class="boxxx w-[160] h-[108px] p-[16px] flex bg-[#D9F0EF] flex-col items-center justify-center gap-[16px] rounded-[16px]">
-                <img src="./assets/school,building.png" class="w-[40px] h-[40px] object-cover" alt="">
+                <img src="./assets/new/school,building.png" class="w-[40px] h-[40px] object-cover" alt="">
                 <p class="text-center text-[14px] font-semibold">Educational Institutions</p>
               </div>
 
@@ -880,27 +884,27 @@
       </div>
     </div>
     <!-- page5 -->
-    <div class="h-[100svh] lg:hidden block w-full relative top-[50vw] " style="background: linear-gradient(90deg, #27D4C1 0%, #817BCA 100%)
+    <div class="h-[105svh] pt-[40px]  rounded-t-[40px] lg:hidden block w-full relative top-[50vw] " style="background: linear-gradient(90deg, #27D4C1 0%, #817BCA 100%)
 ">
-      <div class="paddingg p-[20px]">
+      <div class="paddingg p-[20px] ">
         <div class="flex flex-col gap-[24px] text-center">
-          <div class="flex flex-col gap-[5]">
+          <div class="flex flex-col gap-[5px]">
             <p class="text-white/60 text-[32px] text-center font-semibold ">1 Call = Just
             </p>
           </div>
           <p class="text-white text-[64px] text-center font-semibold ">70 Paisa</p>
-          <p>Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
+          <p class="text-white text-[14px] w-full text-center  ">Spread smiles this Dashain with Ting Ting Dashain Pack!</p>
         </div>
         <div class="flex w-full  h-full gap-[24px] items-center justify-center mt-[50px] flex-col">
           <div
             class="relative z-[100] w-[362px] h-[209px] bg-white footerboxxx rounded-[16px]   flex items-left  flex-col gap-[16px] lg:gap-[24px]  text-white ">
             <p class="text-[24px] font-semibold ">Ting Ting Dashain Pack</p>
             <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
-                class="w-[25px] h-[25px]" alt=""> Lowest call rate – only 70 paisa per call</p>
+                class=" " alt=""> Lowest call rate – only 70 paisa per call</p>
             <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
-                class="w-[25px] h-[25px]" alt=""> Easy to send personalized wishes </p>
+                class=" " alt=""> Easy to send personalized wishes </p>
             <p class="text-[16px] text-white flex items-center gap-[8px] "> <img src="./assets/celebrate.png"
-                class="w-[25px] h-[25px]" alt=""> Perfect for festivals, offers, and greetings</p>
+                class=" " alt=""> Perfect for festivals, offers, and greetings</p>
           </div>
           <div class="relative z-[100] flex  items-center justify-center flex-col gap-[16px]   ">
             <div style="padding: 13px 25px;"
@@ -919,8 +923,8 @@
 
     </div>
     <!-- footer -->
-    <div class="bg-[#D9F0EF] w-full h-[80svh] rounded-t-[40px] lg:hidden block relative  top-[50vw]">
-      <div class="paddingg p-[20px] flex flex-col items-center gap-[40px]">
+    <div class="bg-[#D9F0EF] w-full h-[80svh] rounded-t-[40px] lg:hidden block relative  top-[42vw]">
+      <div class="paddingg p-[25px] flex flex-col items-center gap-[40px]">
         <div class="flex flex-col gap-[24px]">
           <h1 class="text-[32px] leading-none font-semibold">Ready to Make This <br> <span
               style="background: linear-gradient(90deg, #2CD0C1 0%, #7E7FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
@@ -934,7 +938,7 @@
                 alt="black transparent logo of tingting" class="w-1/2 " />
               <div class="text-block-9">AI communication. Built for Nepal.</div>
             </div>
-            <img src="./assets/mobilefooter.png" class="w-[361px] h-[100px] " alt="">
+            <img src="./assets/new/mobilefooter.png" class="w-[361px] h-[100px] " alt="">
 
             <div class="flex   w-full items-center  justify-between text-[14px] text-[#4D4D4D] ">
               <a href="./">© 2025 TingTing</a>
@@ -982,20 +986,7 @@
     }
     requestAnimationFrame(raf);
 
-    lenis.on('scroll', () => {
-      const section = document.querySelector('.page2imgg img');
-      if (!section) return;
-
-      const rect = section.getBoundingClientRect();
-
-      if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
-        // While in section, reduce scroll speed
-        lenis.options.wheelMultiplier = 0.4; // slower (less than 1)
-      } else {
-        // Reset to normal outside
-        lenis.options.wheelMultiplier = 1;
-      }
-    });
+ 
   }
 
 </script>
@@ -1031,8 +1022,10 @@
         duration: 1,
         text: {
           value: "शुभ दशैं",
-          preserveSpaces: true,
-
+        preserveSpaces: true,
+          // padSpace: true,
+          type: "diff",
+          delimiter: "",
         },
       })
       .to("#nepali-anim", {
@@ -1052,8 +1045,8 @@
         text: {
           value: "Happy Dashain",
           preserveSpaces: true,
-          padSpace: true,
-          type: "diff",
+          // padSpace: true,
+          // type: "diff",
           delimiter: "",
         },
       });
@@ -1087,8 +1080,8 @@
         scrollTrigger: {
           trigger: ".hero",
           scrub: true,
-          start: "80% center ",
-          end: "+=800",
+          start: "100%  ",
+          end: "+=1000",
           // pin: true, // ✅ pin only desktop
 
           // ❌ no pin here (removes the space issue)
@@ -1147,40 +1140,29 @@
       });
     },
   });
+// 🌬️ scroll-driven movement
+gsap.to("#kite1", {
+  y: -200, // big scroll movement
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "+=1000",
+    scrub: true,
+    // markers: true
+  }
+});
 
-  gsap.to("#kite1", {
+  gsap.to("#kite2", {
     scrollTrigger: {
       trigger: ".hero",
       scrub: true,
       start: "top top",
       end: "+=1000",
     },
-    y: "-20vw",
-    ease: "cubic-bezier(0.42, 0, 0.58, 1)",
-    // transform: "rotate(45deg)"
+    y: -100,
+    transform: "rotate(-15deg)",
   });
-  gsap.to("#kite2", {
-    scrollTrigger: {
-      trigger: ".hero",
-      scrub: true,
-      start: "top top",
-      // end: "+=1000",
-    },
-    y: "-10vw",
-    transform: "rotate(-45deg)",
-    transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
-  });
-  gsap.to("#kite2", {
-    scrollTrigger: {
-      trigger: ".hero",
-      scrub: true,
-      start: "top top",
-      // end: "+=1000",
-    },
-    y: "-10vw",
-    transform: "rotate(-45deg)",
-    transition: "transform 0.6s cubic-bezier(0.61, 1, 0.88, 1)",
-  });
+ 
   // Only animate on desktop
   const mm = gsap.matchMedia();
   mm.add("(min-width: 992px)", () => {
@@ -1203,24 +1185,63 @@
 
 </script>
 
+
 <script>
   const videos = [
-    "./assets/Dashain campaign 3 videos/STEP 1 new campaign and contact upload.mov",
-    "./assets/Dashain campaign 3 videos/STEP 2 audio upload.mov",
-    "./assets/Dashain campaign 3 videos/STEP 3 campaign run.mov"
+    "./assets/Dashain campaign 3 videos/STEP 1.webm",
+    "./assets/Dashain campaign 3 videos/STEP 2.webm",
+    "./assets/Dashain campaign 3 videos/STEP 3.webm"
   ];
 
   const videoElement = document.getElementById("stepVideo");
-  const slider = document.querySelector(".slider");
-  const boxes = document.querySelectorAll(".boxx");
+  const boxes = document.querySelectorAll(".boxes");
   let currentIndex = 0;
 
-  function setVideo(index) {
+  // ✅ Set video function
+  function setVideo(index, autoplay = false) {
     currentIndex = index;
     videoElement.src = videos[index];
-    videoElement.play();
 
+    if (autoplay) {
+      videoElement.play();
+    }
+
+    // highlight active box
     boxes.forEach((box, i) => {
+      box.classList.toggle("active", i === index);
+    });
+  }
+
+  // ✅ Start with Step 1 (active but no autoplay)
+  setVideo(0, false);
+
+  // ✅ Clicking box → change video & play
+  boxes.forEach((box, i) => {
+    box.addEventListener("click", () => {
+      setVideo(i, true);
+    });
+  });
+
+</script>
+<script>
+if (window.matchMedia("(max-width: 991px)").matches) {
+  const video = [
+    './assets/Dashain campaign 3 videos/STEP 1.webm',
+    './assets/Dashain campaign 3 videos/STEP 2.webm',
+    './assets/Dashain campaign 3 videos/STEP 3.webm',
+  ];
+
+  const videoElementMoile = document.getElementById("stepVideo1");
+  const sliderMobile = document.querySelector(".slider");
+  const boxesMobile = document.querySelectorAll(".mobilebox");
+  let currentIndexMobile = 0;
+
+  function setVideo(index) {
+    currentIndexMobile = index;
+    videoElementMoile.src = video[index];
+    // videoElementMoile.play();
+
+    boxesMobile.forEach((box, i) => {
       box.classList.toggle("active", i === index);
     });
   }
@@ -1228,59 +1249,62 @@
   // Start with first video
   setVideo(0);
 
-  // Auto change video when one ends
-  videoElement.addEventListener("ended", () => {
-    let nextIndex = (currentIndex + 1) % videos.length;
+  // Auto change when video ends
+  videoElementMoile.addEventListener("ended", () => {
+    let nextIndex = (currentIndexMobile + 1) % video.length;
     setVideo(nextIndex);
     scrollToBox(nextIndex);
   });
 
-  // Clicking box → change video
-  boxes.forEach((box, i) => {
+  // Click → change video
+  boxesMobile.forEach((box, i) => {
     box.addEventListener("click", () => {
       setVideo(i);
       scrollToBox(i);
     });
   });
 
-  // Drag to scroll (custom swipe)
+  // Drag to scroll
   let isDown = false;
   let startX, scrollLeft;
 
-  slider.addEventListener("mousedown", (e) => {
+  sliderMobile.addEventListener("mousedown", (e) => {
     isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    startX = e.pageX - sliderMobile.offsetLeft;
+    scrollLeft = sliderMobile.scrollLeft;
   });
-  slider.addEventListener("mouseleave", () => (isDown = false));
-  slider.addEventListener("mouseup", () => {
+  sliderMobile.addEventListener("mouseleave", () => (isDown = false));
+  sliderMobile.addEventListener("mouseup", () => {
     isDown = false;
-    snapToClosestBox(); // snap to nearest card when released
+    snapToClosestBox();
   });
-  slider.addEventListener("mousemove", (e) => {
+  sliderMobile.addEventListener("mousemove", (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
+    const x = e.pageX - sliderMobile.offsetLeft;
     const walk = (x - startX) * 1.5;
-    slider.scrollLeft = scrollLeft - walk;
+    sliderMobile.scrollLeft = scrollLeft - walk;
   });
 
-  // Snap slider to closest box & change video
+  // Snap slider
   function snapToClosestBox() {
-    let boxWidth = boxes[0].offsetWidth + 16; // width + gap
-    let index = Math.round(slider.scrollLeft / boxWidth);
-    index = Math.max(0, Math.min(index, boxes.length - 1));
+    let boxWidth = boxesMobile[0].offsetWidth + 16;
+    let index = Math.round(sliderMobile.scrollLeft / boxWidth);
+    index = Math.max(0, Math.min(index, boxesMobile.length - 1));
     scrollToBox(index);
     setVideo(index);
   }
 
   function scrollToBox(index) {
-    let boxWidth = boxes[0].offsetWidth + 16;
-    slider.scrollTo({
+    let boxWidth = boxesMobile[0].offsetWidth + 16;
+    sliderMobile.scrollTo({
       left: index * boxWidth,
       behavior: "smooth"
     });
   }
+}
 </script>
+
+
 
 </html>
