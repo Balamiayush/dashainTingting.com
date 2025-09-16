@@ -739,7 +739,7 @@ border: 1px solid #D5D5D5
       <img src="./assets/new/heromob.png"
         class="relative z-[-1]  top-[-20vw] lg:top-[-15vw]  lg:hidden block   w-full page1img object-cover  h-[200px]  "
         alt="">
-      <img src="./assets/footer-clouds 2.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt="">
+      <!-- <img src="./assets/new/footer-clouds 1.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt=""> -->
     </div>
     <!-- mobile page2 hero2 -->
     <div class="hero2 lg:hidden w-full h-[90svh] block relative top-[-22vw]   " style="
@@ -1264,45 +1264,6 @@ gsap.to("#kite1", {
 
 
 </script>
-
-
-<script>
-  const videos = [
-    "./assets/Dashain campaign 3 videos/STEP 1.webm",
-    "./assets/Dashain campaign 3 videos/STEP 2.webm",
-    "./assets/Dashain campaign 3 videos/STEP 3.webm"
-  ];
-
-  const videoElement = document.getElementById("stepVideo");
-  const boxes = document.querySelectorAll(".boxes");
-  let currentIndex = 0;
-
-  // ✅ Set video function
-  function setVideo(index, autoplay = false) {
-    currentIndex = index;
-    videoElement.src = videos[index];
-
-    if (autoplay) {
-      videoElement.play();
-    }
-
-    // highlight active box
-    boxes.forEach((box, i) => {
-      box.classList.toggle("active", i === index);
-    });
-  }
-
-  // ✅ Start with Step 1 (active but no autoplay)
-  setVideo(0, false);
-
-  // ✅ Clicking box → change video & play
-  boxes.forEach((box, i) => {
-    box.addEventListener("click", () => {
-      setVideo(i, true);
-    });
-  });
-
-</script>
 <script>
 if (window.matchMedia("(max-width: 991px)").matches) {
   const video = [
@@ -1348,6 +1309,45 @@ if (window.matchMedia("(max-width: 991px)").matches) {
   }
 }
 </script>
+
+<script>
+  const videos = [
+    "./assets/Dashain campaign 3 videos/STEP 1.webm",
+    "./assets/Dashain campaign 3 videos/STEP 2.webm",
+    "./assets/Dashain campaign 3 videos/STEP 3.webm"
+  ];
+
+  const videoElement = document.getElementById("stepVideo");
+  const boxes = document.querySelectorAll(".boxes");
+  let currentIndex = 0;
+
+  // ✅ Set video function
+  function setVideo(index, autoplay = false) {
+    currentIndex = index;
+    videoElement.src = videos[index];
+
+    if (autoplay) {
+      videoElement.play();
+    }
+
+    // highlight active box
+    boxes.forEach((box, i) => {
+      box.classList.toggle("active", i === index);
+    });
+  }
+
+  // ✅ Start with Step 1 (active but no autoplay)
+  setVideo(0, false);
+
+  // ✅ Clicking box → change video & play
+  boxes.forEach((box, i) => {
+    box.addEventListener("click", () => {
+      setVideo(i, true);
+    });
+  });
+
+</script>
+
 
 <script>
   const audioPlayer = document.getElementById("audioPlayer");
