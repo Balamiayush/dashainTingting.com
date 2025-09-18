@@ -1,4 +1,11 @@
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
 
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  scrollbar-width: none; /* For Firefox */
+}
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -2643,12 +2650,12 @@ body {
 .hero-form-field {
     color: var(--black);
     -webkit-text-fill-color: inherit;
-    background-color:  #F8F7FC;
+   
     background-clip: content-box;
     border: 2px solid #807dcab3;
     border-radius: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     /* padding-left: 12px; */
     font-size: 20px;
     margin-bottom: 0;
@@ -2686,7 +2693,7 @@ body {
         padding: 16px;
         gap: 24px;
         width: 349px;
-        height: 312px;
+        height: auto;
     }
     .box{
         top: 50px;
@@ -2695,7 +2702,8 @@ body {
 }
 
 .hero-form-field.otp-field {
-    display: none
+    display: none;
+    background: #F8F7FC;
 }
 
 .submit-button {
@@ -3854,9 +3862,7 @@ body {
     }
 
     .hero-form-field {
-        color: var(--black);
-        padding-top: 20px;
-        padding-bottom: 20px;
+
         font-size: 16px
     }
 
@@ -4093,3 +4099,4 @@ body {
         flex-flow: column
     }
 }
+/* //foisjfskjflkslfdjsflkajsflkajflakjfaljfalkjf */
