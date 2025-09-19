@@ -255,11 +255,12 @@
 
 <body>
   <audio id="audioPlayer" src="./assets/dashainaudio.mp3" autoplay></audio>
-  <div class="desktop    h-full relative lg:block hidden">
-    <div class="hero   w-full h-full relative overflow-hidden">
+   <div class="hero   w-full h-full relative overflow-hidden">
       <div class="absolute z-[-1] w-full h-screen bg-[#D8F0EF] "></div>
+      <img src="./assets/new/heromobilecloude.png" class="footer-clouds w-full h-full scale-[1] relative lg:hidden block  "
+          alt="fkl0">
       <nav style="backdrop-filter: blur(24px)
-" class="flex   fixed z-[1000]  p-2  justify-around w-full  items-center   ">
+" class="   fixed z-[1000]  p-2  justify-around w-full  items-center   lg:flex hidden">
         <img src="./hello/67861d5e9350d5531cf78a3b/logo.png" class="lg:w-[173px] w-[173px]  object-cover" alt="">
         <div
           class=" bg-[#2C2C30] btnnn lg:h-[52px] cursor-pointer btnn  h-[40px] w-[99px] lg:w-[207px] text-white text-[14px] lg:text-[16px] rounded-full flex justify-center items-center cursor-pointer ">
@@ -267,11 +268,13 @@
         </div>
       </nav>
       <div class="w-layout-blockcontainer box heroy-section w-container ">
-        <img src="./assets/new/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen " alt="fkl0">
+        <img src="./assets/new/footer-clouds 1.png" class="footer-clouds w-full h-full lg:h-screen lg:block hidden " alt="fkl0">
         <img src="./assets/new/kite.png" id="kite1"
           class="lg:block hidden kite lg:left-[18%] left-[252px] absolute top-[472px]  z-[-1] lg:bottom-[20%] lg:z-[100]"
           alt="">
-        <img src="./assets/new/kite2.png" id="kite2" data-scroll
+              <img id="kite1" src="./assets/new/mobileleftkite.png" class="top-[5px] z-[100] left-[13px] absolute  block lg:hidden  " alt="">
+    <img id="kite2" src="./assets/new/mobilerightkite.png" class="top-[5px] z-[100] right-[13px] absolute   block lg:hidden " alt="">
+        <img src="./assets/new/kite2.png" id="kite2"
           class="lg:block hidden kite top-[360px] left-[1007px]  z-[-1] absolute lg:bottom-[10%]  lg:z-[100]" alt="">
         <div class="w-full h-full flex items-center justify-center flex-col gap-[24px] mt-10 ">
           <div class="div-block hero-banner ">
@@ -281,7 +284,7 @@
           </div>
           <h1 data-w-id="6465664c-9973-09dd-c854-c18cf6f1ccd8" style="opacity:0"
             class="hero-title lg:text-[40px] text-[35px] font-semibold lg:font-bold">Say
-            <span id="nepali-anim" class="text-span"> Happy Dashain </span> in <br> Your Own Voice.
+            <span id="nepali-anim" class="text-span">Happy Dashain</span> in <br> Your Own Voice.
           </h1>
           <p data-w-id="20c52f74-cbc7-b63e-bf76-947be95175be" style="opacity:0" class="paragraph-4 text-[#4D4D4D]">Send
             a voice
@@ -295,9 +298,11 @@
             <div data-w-id="413b9f38-379b-650c-5a5f-6f44d9abc040"
               style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform-style:preserve-3d"
               class="form-background-gradient"></div>
-            <div class="hero-form-inner  ">
+            <div style="
+            height: auto;
+            " class="hero-form-inner  h-auto">
               <div class=" ">
-                <div class="w-form lg:block hidden">
+                <div class="w-form ">
                   <form id="wf-form-Hero-Form" class=" " name="wf-form-Hero-Form" data-name="Hero Form" method="post"
                     data-wf-page-id="67861d5e9350d5531cf78a45"
                     data-wf-element-id="d5fc6fa1-4461-c1a1-6c4c-d7854b5d4128">
@@ -353,9 +358,9 @@ border: 1px solid #D5D5D5
                         Setup Fee</p>
                     </div>
                   </form>
-                  <!-- <div class="success-message w-form-done">
+                  <div class="success-message w-form-done">
                     <div id="done-message">OTP Received</div>
-                  </div> -->
+                  </div>
                   <div class="w-form-fail ">
                     <div id="error-message">Oops! Something went wrong while submitting the form.</div>
                   </div>
@@ -364,11 +369,16 @@ border: 1px solid #D5D5D5
             </div>
           </div>
         </div>
+        
       </div>
-
+<img src="./assets/new/heromob.png"
+        class="relative z-[-1]  top-[-20vw] lg:top-[-15vw]  lg:hidden block   w-full page1img object-cover  h-[200px]  "
+        alt="">
       <img src="./assets/new/page1.png"
         class="relative z-[-1]  top-[-20vw] lg:top-[-15vw] lg:block hidden w-full page1img  " alt="">
     </div>
+  <div class="desktop   h-full relative lg:block hidden">
+   
 
     <div class="relative hidden lg:block   w-full lg:h-full top-[-22vw] lg:top-[-15vw]">
       <!-- Background -->
@@ -608,7 +618,7 @@ border: 1px solid #D5D5D5
       </div>
     </div>
     <div
-      class="w-full max-w-[1480px] h-[540px] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[50] top-[30vw] rounded-t-[40px]">
+      class="w-full h-[540px] flex flex-col gap-[60px] pt-[5vh] justify-center bg-[#fff] relative z-[50] top-[30vw] rounded-t-[40px]">
       <div class="flex w-full  justify-evenly flex  ">
         <h1 class="text-[40px] leading-none font-semibold">Ready to Make This <br> <span
             style="background: linear-gradient(90deg, #2CD0C1 0%, #7E7FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
@@ -631,7 +641,8 @@ border: 1px solid #D5D5D5
           <div class="div-block-6">
 
           </div>
-          <div  class="listt w-full flex  items-center justify-between">
+          <div style="    padding-left: 10vw;
+    padding-right: 10vw;" class="listt flex   items-center justify-between  ">
             <div class="flex gap-[48px] items-center  ">
               <div class="footer-link text-[14px]" style="opacity: 50%;">© 2025 TingTing</div>
               <a href="https://app.tingting.io/terms-and-conditions" class="footer-lin text-[14px] "
@@ -675,98 +686,8 @@ border: 1px solid #D5D5D5
         <a href="https://app.tingting.io/signup" target="_blank">Create</a>
       </div>
     </nav>
-    <img id="kite1" src="./assets/new/mobileleftkite.png" class="top-[70px] z-[100] left-[13px] absolute  " alt="">
-    <img id="kite2" src="./assets/new/mobilerightkite.png" class="top-[50px] z-[100] right-[13px] absolute  " alt="">
-    <div class="hero w-full h-full relative overflow-hidden">
-      <div class="w-layout-blockcontainer box heroy-section w-container ">
-        <img src="./assets/new/heromobilecloude.png" class="footer-clouds w-full h-full scale-[1] relative  "
-          alt="fkl0">
-        <div class="flex flex-col items-center justify-center  top-[50px] relative gap-[48px] ">
-          <div class="w-full h-full flex items-center justify-center flex-col gap-[24px]">
-            <div class="div-block hero-banner ">
-              <div class="div-block-2">
-                <p class="hero-banner-text">🎉<span class="font-bold">दशैं विशेष अफर</span>/Dashain Special Offer</p>
-              </div>
-            </div>
-            <h1 data-w-id="6465664c-9973-09dd-c854-c18cf6f1ccd8" style="opacity:0"
-              class="hero-title lg:text-[40px] text-[#2C2C30] text-[35px] font-semibold lg:font-bold">Say
-              <span id="nepali-anim" class="text-span">Happy Dashain</span> in <br> Your Own Voice.
-            </h1>
-            <p data-w-id="20c52f74-cbc7-b63e-bf76-947be95175be" style="opacity:0," class="paragraph-4 text-[#4D4D4D]">
-              Send a voice
-              greetings to your team <br> or customers instantly this Dashain.</p>
-          </div>
-          <div data-w-id="07ba16af-5b11-e356-eff2-1295af9aa2fa"
-            style="-webkit-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-            class="hero-graphics">
-
-            <div class="hero-form-container lg:block hidden ">
-              <div data-w-id="413b9f38-379b-650c-5a5f-6f44d9abc040"
-                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0) rotateZ(0deg) skew(0, 0);transform-style:preserve-3d"
-                class="form-background-gradient"></div>
-              <div style="  
-            padding: 16px;
-        gap: 24px;
-        width: 349px;
-        height: auto;" class="hero-form-inner h-auto w-[349px]">
-                <div class=" ">
-                  <div class="w-form lg:hidden block">
-                    <form id="wf-form-Hero-Form" class=" " name="wf-form-Hero-Form" data-name="Hero Form" method="post"
-                      data-wf-page-id="67861d5e9350d5531cf78a45"
-                      data-wf-element-id="d5fc6fa1-4461-c1a1-6c4c-d7854b5d4128">
-                      <div class="flex flex-col w-full gap-[16px]">
-
-
-                        <div class="hero-form-field tel-container relative">
-                          <div id="playBtn"
-                            class="text-block-10 bg-[#D5EEED]  flex items-center relative justify-center w-[48px]  h-[48px] rounded-[8px]">
-                            <img id="playIcon" src="./assets/new/play.svg"
-                              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" alt="">
-                          </div>
-                          <div class="relative flex flex-col">
-                            <p class="text-[12px] lg:text-[16px] font-semibold ">Bring Your Festive Message to Life</p>
-                            <p class="text-[14px] text-[#73737D]"> This could be in your voice</p>
-
-                          </div>
-                        </div>
-                        <p class="text-center">or</p>
-                        <div class="hero-form-field tel-container">
-                          <div class="div-block-11">
-                            <div class="text-block-10">+977</div>
-                          </div><input class=" tel-field w-input bg-[  #F8F7FC] " maxlength="256" name="number" data-name="number"
-                            placeholder="Enter your phone number" type="tel" id="number-2" required="" />
-                        </div>
-                        <input style="display: none;   background: #F8F7FC"
-                          class="hero-form-field pl-2.5 otp-field-m " maxlength="256" name="otp" data-name="otp"
-                          placeholder="Enter OTP" type="text" id="otp-2" />
-                        <div id="fom-button" data-w-id="f18a0f55-6ba3-ad67-9ffe-dbcef7b4b207" class="btn btn-gradient">
-                          <img loading="lazy"
-                            src="https://www.tingting.io/hello/67861d5e9350d5531cf78a3b/svgexport-1%20(2).svg"
-                            alt="white logo tinting with black background" class="image-7" />
-                          <div class="text-block-3">Click to get a call</div><input type="submit"
-                            data-wait="Please wait..." class="submit-button-2 w-button" value="Submit" />
-                        </div>
-                        <p class="text-[14px] font-semibold text-center text-[#4D4D4D] ">Trusted by 500+ Businesses - No
-                          Setup Fee </p>
-                      </div>
-                    </form>
-                    <div class="hidden w-form-failM">
-                      <div id="error-messageM">Oops! Something went wrong while submitting the form.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/new/heromob.png"
-        class="relative z-[-1]  top-[-20vw] lg:top-[-15vw]  lg:hidden block   w-full page1img object-cover  h-[200px]  "
-        alt="">
-      <!-- <img src="./assets/new/footer-clouds 1.png" class="absolute w-full top-0 h-auto object-cover z-[10]" alt=""> -->
-    </div>
     <!-- mobile page2 hero2 -->
-    <div class="hero2 lg:hidden w-full h-[90svh] block relative top-[-22vw]   " style="
+    <div class="hero2 lg:hidden w-full h-[90svh] block relative z-[1000] top-[-22vh] " style="
     background: linear-gradient(90deg, #00D0B9 0%, #827ACA 98.54%);">
       <div class="paddingg p-[16px] top-[50px] relative flex flex-col  gap-[80px] items-start justify-center">
         <!-- Left-aligned Text -->
@@ -1043,78 +964,130 @@ border: 1px solid #D5D5D5
 <script src="./split-type@0.3.4/umd/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 <script>
-  var Webflow = Webflow || [];
-  let actionURL = "https://app.tingting.io/api/dashain/call/";
+  // var Webflow = Webflow || [];
+  // let actionURL = "https://app.tingting.io/api/dashain/call/";
 
-  function otpVerify() {
-    let otpInput = document.querySelector(".hero-form-field.otp-field");
-    let otpInputM = document.querySelector(".hero-form-field.otp-field-m");
-    otpInputM.style.display = "block";
-    otpInputM.setAttribute("required", true);
-    console.log("otp verified");
-    otpInput.style.display = "block";
-    otpInput.setAttribute("required", true);
-    console.log("otp verified");
-  }
+  // function otpVerify() {
+  //   let otpInput = document.querySelector(".hero-form-field.otp-field");
+  //   // let otpInputM = document.querySelector(".hero-form-field.otp-field-m");
+  //   // otpInputM.style.display = "block";
+  //   // otpInputM.setAttribute("required", true);
+  //   // console.log("otp verified");
+  //   otpInput.style.display = "block";
+  //   otpInput.setAttribute("required", true);
+  //   console.log("otp verified");
+  // }
 
-  Webflow.push(function () {
-    // === Custom Form Handling ===
+  // Webflow.push(function () {
+  //   // === Custom Form Handling ===
 
-    // unbind webflow form handling
-    $(document).off("submit");
+  //   // unbind webflow form handling
+  //   $(document).off("submit");
 
-    // new form handling
-    $("form").submit(function (evt) {
-      evt.preventDefault();
-      var form = $(this)[0];
-      var formData = new FormData(form);
-      // document.querySelector(".w-form-done").style.display = "none";
-      // document.querySelector(".w-form-fail").style.display = "none";
+  //   // new form handling
+  //   $("form").submit(function (evt) {
+  //     evt.preventDefault();
+  //     var form = $(this)[0];
+  //     var formData = new FormData(form);
+  //     // document.querySelector(".w-form-done").style.display = "none";
+  //     // document.querySelector(".w-form-fail").style.display = "none";
 
-      // 🔥 Remove empty fields
-      for (let [key, value] of formData.entries()) {
-        if (!value.trim()) { // Check if the value is empty
-          formData.delete(key);
+  //     // 🔥 Remove empty fields
+  //     for (let [key, value] of formData.entries()) {
+  //       if (!value.trim()) { // Check if the value is empty
+  //         formData.delete(key);
+  //       }
+  //     }
+
+  //     try {
+  //       fetch(actionURL, {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(Object.fromEntries(formData)),
+  //       })
+  //         .then((response) => {
+  //           if (!response.ok) {
+  //             throw new Error("Failed to fetch from the server: " + response.statusText);
+  //           }
+  //           return response.json();
+  //         })
+  //         .then((data) => {
+  //           if (data.error) {
+  //             throw new Error(data.error); // Throw error if server returns an error message
+  //           }
+  //           // document.querySelector(".w-form-done").style.display = "block";
+  //           // document.querySelector("#done-message").innerHTML = data.message;
+  //           otpVerify();
+  //         })
+  //         .catch((error) => {
+  //           document.querySelector("#error-message").innerHTML = error.message;
+  //           // document.querySelector("#error-messageM").innerHTML = error.message;
+
+  //           document.querySelector(".w-form-fail").style.display = "block";
+  //           // document.querySelector(".w-form-failM").style.display = "block";
+  //         });
+  //     } catch (error) {
+  //       document.querySelector("#error-message").innerHTML = error.message;
+  //       // document.querySelector("#error-messageM").innerHTML = error.message;
+  //       document.querySelector(".w-form-fail").style.display = "block";
+  //       // document.querySelector(".w-form-failM").style.display = "block";
+  //     }
+  //   });
+  // });
+     var Webflow = Webflow || [];
+    var actionURL = "https://app.tingting.io/api/dashain/call/";
+
+    function otpVerify() {
+      let otpInput = document.querySelector(".hero-form-field.otp-field");
+      otpInput.style.display = "block";
+      otpInput.setAttribute("required", true);
+      console.log("otp verified");
+  
+    }
+    Webflow.push(function () {
+      // === Custom Form Handling ===
+
+      // unbind webflow form handling
+      $(document).off("submit");
+
+      // new form handling
+      $("form").submit(function (evt) {
+        evt.preventDefault();
+        var form = $(this)[0];
+        var formData = new FormData(form);
+        document.querySelector(".w-form-done").style.display = "none";
+        document.querySelector(".w-form-fail").style.display = "none";
+        // 🔥 Remove empty fields
+        for (let [key, value] of formData.entries()) {
+          if (!value.trim()) { // Check if the value is empty
+            formData.delete(key);
+          }
         }
-      }
 
-      try {
-        fetch(actionURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(Object.fromEntries(formData)),
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("Failed to fetch from the server: " + response.statusText);
-            }
-            return response.json();
-          })
+      fetch(actionURL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json", 
+  },
+  body: JSON.stringify(Object.fromEntries(formData)),
+})
+          .then((response) => response.json()) // Convert response to JSON
           .then((data) => {
             if (data.error) {
               throw new Error(data.error); // Throw error if server returns an error message
             }
-            // document.querySelector(".w-form-done").style.display = "block";
-            // document.querySelector("#done-message").innerHTML = data.message;
+            document.querySelector(".w-form-done").style.display = "block";
+            document.querySelector("#done-message").innerHTML = data.message;
             otpVerify();
           })
           .catch((error) => {
             document.querySelector("#error-message").innerHTML = error.message;
-            document.querySelector("#error-messageM").innerHTML = error.message;
-
             document.querySelector(".w-form-fail").style.display = "block";
-            document.querySelector(".w-form-failM").style.display = "block";
           });
-      } catch (error) {
-        document.querySelector("#error-message").innerHTML = error.message;
-        document.querySelector("#error-messageM").innerHTML = error.message;
-        document.querySelector(".w-form-fail").style.display = "block";
-        document.querySelector(".w-form-failM").style.display = "block";
-      }
+      });
     });
-  });
 </script>
 <script>
   // Custom: slow down inside .page2imgg
@@ -1227,8 +1200,9 @@ border: 1px solid #D5D5D5
         scrollTrigger: {
           trigger: ".hero",
           scrub: true,
-          start: "100%  ",
-          end: "+=1000",
+          start: "top top   ",
+          end: "bottom bottm ",
+          // markers: true,
           // pin: true, // ✅ pin only desktop
 
           // ❌ no pin here (removes the space issue)
